@@ -1,6 +1,8 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +20,7 @@ content="Radhika Barot is a Digital Marketing Consultant, Video Editor and Coder
 href="https://radhika38.github.io/radhikabarot/">
 
 <!-- Open Graph -->
+
 <meta property="og:title"
 content="Radhika Barot — Digital Marketing Consultant, Video Editor, Coder">
 
@@ -29,48 +32,111 @@ content="Digital marketing, video editing and technology by Radhika Barot.">
 <meta property="og:url"
 content="https://radhika38.github.io/radhikabarot/">
 
+
+
 <!-- ============================================================
      META PIXEL
      Pixel ID: 1048726811492659
 ============================================================ -->
 
 <script>
+
 !function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
+
+{
+
+if(f.fbq)return;
+
+n=f.fbq=function(){
+
+n.callMethod ?
+
+n.callMethod.apply(n,arguments) :
+
+n.queue.push(arguments)
+
+};
+
+if(!f._fbq)f._fbq=n;
+
+n.push=n;
+
+n.loaded=!0;
+
+n.version='2.0';
+
+n.queue=[];
+
+t=b.createElement(e);
+
+t.async=!0;
+
+t.src=v;
+
+s=b.getElementsByTagName(e)[0];
+
+s.parentNode.insertBefore(t,s)
+
+}
+
+(window, document,'script',
+
 'https://connect.facebook.net/en_US/fbevents.js');
 
+
+/* YOUR EXISTING PIXEL */
+
 fbq('init', '1048726811492659');
+
 fbq('track', 'PageView');
+
 </script>
 
+
 <noscript>
+
 <img
 height="1"
 width="1"
 style="display:none"
 src="https://www.facebook.com/tr?id=1048726811492659&ev=PageView&noscript=1"
 />
+
 </noscript>
 
 <!-- End Meta Pixel -->
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+<!-- ============================================================
+     FONTS
+============================================================ -->
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
 
 <link
 href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
 rel="stylesheet">
 
-<!-- GSAP -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+<!-- ============================================================
+     GSAP
+============================================================ -->
+
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js">
+</script>
+
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
+</script>
+
 
 
 <style>
@@ -80,24 +146,33 @@ rel="stylesheet">
 ============================================================ */
 
 :root{
+
   --bg:#070707;
+
   --bg2:#0c0c0c;
+
   --card:#141414;
+
   --card2:#181818;
 
   --white:#f5f5f5;
+
   --muted:#a1a1a1;
 
   --red:#ff2b2b;
+
   --red-dark:#c91515;
 
   --border:rgba(255,255,255,.10);
+
   --border-strong:rgba(255,255,255,.18);
 
   --display:'Space Grotesk',sans-serif;
+
   --body:'Inter',sans-serif;
 
   --ease:cubic-bezier(.16,.84,.44,1);
+
 }
 
 
@@ -106,50 +181,81 @@ rel="stylesheet">
 ============================================================ */
 
 *{
+
   margin:0;
+
   padding:0;
+
   box-sizing:border-box;
+
 }
 
 html{
+
   scroll-behavior:smooth;
+
 }
 
 body{
+
   background:var(--bg);
+
   color:var(--white);
+
   font-family:var(--body);
+
   line-height:1.5;
+
   overflow-x:hidden;
+
   -webkit-font-smoothing:antialiased;
+
 }
 
 img{
+
   max-width:100%;
+
   display:block;
+
 }
 
 a{
+
   color:inherit;
+
   text-decoration:none;
+
 }
 
 button{
+
   font-family:inherit;
+
   cursor:pointer;
+
   border:0;
+
   background:none;
+
   color:inherit;
+
 }
 
 ::selection{
+
   background:var(--red);
+
   color:white;
+
 }
 
 :focus-visible{
+
   outline:2px solid var(--red);
+
   outline-offset:4px;
+
 }
 
 
@@ -158,59 +264,93 @@ button{
 ============================================================ */
 
 .wrap{
+
   width:100%;
+
   max-width:1240px;
+
   margin:auto;
+
   padding:0 40px;
+
 }
 
 .section{
+
   position:relative;
+
   padding:150px 0;
+
   border-top:1px solid var(--border);
+
 }
 
 .label{
+
   display:inline-flex;
+
   align-items:center;
+
   gap:10px;
 
   color:var(--red);
 
   font-size:12px;
+
   font-weight:600;
+
   letter-spacing:2px;
+
   text-transform:uppercase;
+
 }
 
 .label::before{
+
   content:"";
+
   width:22px;
+
   height:1px;
+
   background:var(--red);
+
 }
 
 .heading-lg{
+
   margin-top:18px;
 
   font-family:var(--display);
+
   font-size:clamp(40px,6vw,72px);
+
   font-weight:600;
 
   line-height:1.05;
+
   letter-spacing:-.025em;
+
 }
 
 .body-txt{
+
   color:var(--muted);
+
   font-size:17px;
+
   line-height:1.8;
+
 }
 
 .btn{
+
   display:inline-flex;
+
   align-items:center;
+
   justify-content:center;
+
   gap:10px;
 
   padding:16px 28px;
@@ -218,45 +358,69 @@ button{
   border-radius:100px;
 
   font-size:13px;
+
   font-weight:600;
+
   letter-spacing:1px;
+
   text-transform:uppercase;
 
   transition:
+
     transform .35s var(--ease),
+
     background .35s var(--ease),
+
     color .35s var(--ease),
+
     border-color .35s var(--ease);
+
 }
 
 .btn:hover{
+
   transform:translateY(-3px);
+
 }
 
 .btn-fill{
+
   background:var(--red);
+
   color:#090909;
+
 }
 
 .btn-fill:hover{
+
   background:var(--white);
+
 }
 
 .btn-line{
+
   border:1px solid var(--border-strong);
+
 }
 
 .btn-line:hover{
+
   color:var(--red);
+
   border-color:var(--red);
+
 }
 
 .arrow{
+
   transition:transform .35s var(--ease);
+
 }
 
 .btn:hover .arrow{
+
   transform:translate(3px,-3px);
+
 }
 
 
@@ -265,13 +429,19 @@ button{
 ============================================================ */
 
 .noise{
+
   position:fixed;
+
   inset:0;
+
   z-index:2;
+
   pointer-events:none;
+
   opacity:.035;
 
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
 }
 
 
@@ -280,11 +450,15 @@ button{
 ============================================================ */
 
 .cursor{
+
   position:fixed;
+
   left:0;
+
   top:0;
 
   width:10px;
+
   height:10px;
 
   border-radius:50%;
@@ -300,19 +474,27 @@ button{
   mix-blend-mode:difference;
 
   transition:
+
     width .3s var(--ease),
+
     height .3s var(--ease);
+
 }
 
 .cursor.hover{
+
   width:44px;
+
   height:44px;
+
 }
 
 @media(max-width:1024px){
 
   .cursor{
+
     display:none;
+
   }
 
 }
@@ -323,23 +505,31 @@ button{
 ============================================================ */
 
 .nav-outer{
+
   position:fixed;
 
   top:24px;
+
   left:0;
+
   right:0;
 
   z-index:1000;
 
   display:flex;
+
   justify-content:center;
 
   opacity:0;
+
   transform:translateY(-15px);
+
 }
 
 .nav{
+
   display:flex;
+
   align-items:center;
 
   gap:8px;
@@ -355,31 +545,41 @@ button{
   backdrop-filter:blur(18px);
 
   box-shadow:0 10px 40px rgba(0,0,0,.4);
+
 }
 
 .nav-logo{
+
   margin-right:24px;
 
   font-family:var(--display);
 
   font-size:16px;
+
   font-weight:600;
 
   letter-spacing:.5px;
+
 }
 
 .nav-logo span{
+
   color:var(--red);
+
 }
 
 .nav-links{
+
   display:flex;
+
   gap:32px;
 
   margin-right:24px;
+
 }
 
 .nav-links a{
+
   position:relative;
 
   padding:4px 0;
@@ -389,77 +589,102 @@ button{
   font-size:13px;
 
   transition:color .3s ease;
+
 }
 
 .nav-links a:hover{
+
   color:var(--white);
+
 }
 
 .nav-links a::after{
+
   content:"";
 
   position:absolute;
 
   left:0;
+
   bottom:-2px;
 
   width:0;
+
   height:1px;
 
   background:var(--red);
 
   transition:width .3s var(--ease);
+
 }
 
 .nav-links a:hover::after{
+
   width:100%;
+
 }
 
 .nav-cta{
+
   display:flex;
+
   align-items:center;
+
   gap:6px;
 
   padding:12px 20px;
 
   background:var(--white);
+
   color:#080808;
 
   border-radius:100px;
 
   font-size:12px;
+
   font-weight:600;
 
   transition:.3s ease;
+
 }
 
 .nav-cta:hover{
+
   background:var(--red);
+
 }
 
 .nav-burger{
+
   display:none;
 
   width:38px;
+
   height:38px;
 
   align-items:center;
+
   justify-content:center;
 
   border-radius:50%;
+
 }
 
 .nav-burger span{
+
   position:relative;
 
   width:16px;
+
   height:1px;
 
   background:var(--white);
+
 }
 
 .nav-burger span::before,
 .nav-burger span::after{
+
   content:"";
 
   position:absolute;
@@ -467,17 +692,46 @@ button{
   left:0;
 
   width:16px;
+
   height:1px;
 
   background:var(--white);
+
 }
 
 .nav-burger span::before{
+
   top:-5px;
+
 }
 
 .nav-burger span::after{
+
   top:5px;
+
+}
+
+@media(max-width:860px){
+
+  .nav-links,
+  .nav-cta{
+
+    display:none;
+
+  }
+
+  .nav-burger{
+
+    display:flex;
+
+  }
+
+  .nav{
+
+    padding:8px 8px 8px 20px;
+
+  }
+
 }
 
 
@@ -486,15 +740,19 @@ button{
 ============================================================ */
 
 .mobile-menu{
+
   position:fixed;
+
   inset:0;
 
   z-index:999;
 
   display:flex;
+
   flex-direction:column;
 
   align-items:center;
+
   justify-content:center;
 
   gap:32px;
@@ -502,37 +760,28 @@ button{
   background:rgba(7,7,7,.98);
 
   opacity:0;
+
   pointer-events:none;
 
   transition:opacity .4s ease;
+
 }
 
 .mobile-menu.open{
+
   opacity:1;
+
   pointer-events:auto;
+
 }
 
 .mobile-menu a{
+
   font-family:var(--display);
 
   font-size:32px;
+
   font-weight:600;
-}
-
-@media(max-width:860px){
-
-  .nav-links,
-  .nav-cta{
-    display:none;
-  }
-
-  .nav-burger{
-    display:flex;
-  }
-
-  .nav{
-    padding:8px 8px 8px 20px;
-  }
 
 }
 
@@ -542,25 +791,31 @@ button{
 ============================================================ */
 
 .hero{
+
   position:relative;
 
   min-height:100vh;
 
   display:flex;
+
   align-items:center;
 
   padding:150px 0 100px;
 
   overflow:hidden;
+
 }
 
 .hero-bg-glow{
+
   position:absolute;
 
   top:-20%;
+
   right:-10%;
 
   width:60vw;
+
   height:60vw;
 
   background:radial-gradient(
@@ -568,15 +823,27 @@ button{
     rgba(255,43,43,.14),
     transparent 65%
   );
+
 }
 
 .hero-grid{
+
   position:absolute;
+
   inset:0;
 
   background-image:
-    linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+
+    linear-gradient(
+      rgba(255,255,255,.035) 1px,
+      transparent 1px
+    ),
+
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.035) 1px,
+      transparent 1px
+    );
 
   background-size:64px 64px;
 
@@ -585,10 +852,13 @@ button{
     black 30%,
     transparent 80%
   );
+
 }
 
 .hero-grid-layout{
+
   position:relative;
+
   z-index:3;
 
   display:grid;
@@ -598,9 +868,11 @@ button{
   gap:64px;
 
   align-items:center;
+
 }
 
 .hero-heading{
+
   margin-top:22px;
 
   font-family:var(--display);
@@ -612,22 +884,31 @@ button{
   line-height:.98;
 
   letter-spacing:-.025em;
+
 }
 
 .hero-heading .line{
+
   display:block;
+
   overflow:hidden;
+
 }
 
 .hero-heading .line span{
+
   display:block;
+
 }
 
 .accent-word{
+
   color:var(--red);
+
 }
 
 .hero-sub{
+
   max-width:52ch;
 
   margin-top:28px;
@@ -637,20 +918,27 @@ button{
   font-size:18px;
 
   line-height:1.7;
+
 }
 
 .hero-ctas{
+
   display:flex;
+
   flex-wrap:wrap;
 
   gap:16px;
 
   margin-top:40px;
+
 }
 
 .hero-credibility{
+
   display:flex;
+
   align-items:center;
+
   gap:14px;
 
   margin-top:56px;
@@ -662,15 +950,19 @@ button{
   letter-spacing:1.5px;
 
   text-transform:uppercase;
+
 }
 
 .hero-credibility .dot{
+
   width:6px;
+
   height:6px;
 
   border-radius:50%;
 
   background:var(--red);
+
 }
 
 
@@ -679,6 +971,7 @@ button{
 ============================================================ */
 
 .hero-form-card{
+
   position:relative;
 
   padding:40px;
@@ -694,15 +987,19 @@ button{
   border-radius:24px;
 
   box-shadow:0 30px 80px rgba(0,0,0,.5);
+
 }
 
 .hero-form-card::before{
+
   content:"";
 
   position:absolute;
 
   top:0;
+
   left:32px;
+
   right:32px;
 
   height:1px;
@@ -713,15 +1010,19 @@ button{
     var(--red),
     transparent
   );
+
 }
 
 .hero-form-card h3{
+
   font-family:var(--display);
 
   font-size:24px;
+
 }
 
 .form-sub{
+
   margin-top:10px;
 
   color:var(--muted);
@@ -729,16 +1030,21 @@ button{
   font-size:14px;
 
   line-height:1.6;
+
 }
 
 .form-grid{
+
   display:grid;
+
   gap:18px;
 
   margin-top:28px;
+
 }
 
 .field label{
+
   display:block;
 
   margin-bottom:8px;
@@ -750,6 +1056,7 @@ button{
   letter-spacing:1.2px;
 
   text-transform:uppercase;
+
 }
 
 .field input,
@@ -773,9 +1080,11 @@ button{
   font-size:14px;
 
   transition:.3s ease;
+
 }
 
 .field select{
+
   appearance:none;
 
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23A1A1A1' stroke-width='1.4' fill='none'/%3E%3C/svg%3E");
@@ -783,32 +1092,41 @@ button{
   background-repeat:no-repeat;
 
   background-position:right 16px center;
+
 }
 
 .field textarea{
+
   min-height:90px;
+
   resize:none;
+
 }
 
 .field input:focus,
 .field select:focus,
 .field textarea:focus{
+
   outline:none;
 
   border-color:var(--red);
 
   background:rgba(255,43,43,.04);
+
 }
 
 .field-row{
+
   display:grid;
 
   grid-template-columns:1fr 1fr;
 
   gap:14px;
+
 }
 
 .form-error{
+
   min-height:14px;
 
   margin-top:6px;
@@ -820,24 +1138,33 @@ button{
   opacity:0;
 
   transform:translateY(-3px);
+
 }
 
 .form-error.show{
+
   opacity:1;
+
   transform:translateY(0);
+
 }
 
 .field.invalid input,
 .field.invalid select,
 .field.invalid textarea{
+
   border-color:var(--red);
+
 }
 
 .form-submit{
+
   width:100%;
+
 }
 
 .form-note{
+
   margin-top:16px;
 
   color:var(--muted);
@@ -845,6 +1172,7 @@ button{
   font-size:12px;
 
   text-align:center;
+
 }
 
 
@@ -853,14 +1181,17 @@ button{
 ============================================================ */
 
 .about-layout{
+
   display:grid;
 
   grid-template-columns:.9fr 1.1fr;
 
   gap:80px;
+
 }
 
 .about-copy p{
+
   margin-top:20px;
 
   color:var(--muted);
@@ -868,17 +1199,21 @@ button{
   font-size:17px;
 
   line-height:1.85;
+
 }
 
 .about-copy p:first-child{
+
   margin-top:0;
 
   color:var(--white);
 
   font-size:19px;
+
 }
 
 .identity-strip{
+
   display:grid;
 
   grid-template-columns:1fr 1fr;
@@ -886,25 +1221,33 @@ button{
   margin-top:56px;
 
   border-top:1px solid var(--border);
+
   border-left:1px solid var(--border);
+
 }
 
 .identity-cell{
+
   padding:28px 26px;
 
   border-right:1px solid var(--border);
+
   border-bottom:1px solid var(--border);
+
 }
 
 .identity-cell .top{
+
   font-family:var(--display);
 
   font-size:19px;
 
   font-weight:600;
+
 }
 
 .identity-cell .bottom{
+
   margin-top:8px;
 
   color:var(--red);
@@ -914,6 +1257,7 @@ button{
   letter-spacing:1px;
 
   text-transform:uppercase;
+
 }
 
 
@@ -922,21 +1266,27 @@ button{
 ============================================================ */
 
 .section-head{
+
   max-width:720px;
 
   margin-bottom:64px;
+
 }
 
 .service-grid{
+
   display:grid;
 
   grid-template-columns:1fr 1fr;
 
   border-top:1px solid var(--border);
+
   border-left:1px solid var(--border);
+
 }
 
 .service-card{
+
   position:relative;
 
   padding:48px 40px;
@@ -944,19 +1294,25 @@ button{
   overflow:hidden;
 
   border-right:1px solid var(--border);
+
   border-bottom:1px solid var(--border);
 
   transition:.4s ease;
+
 }
 
 .service-card:hover{
+
   background:#111;
+
 }
 
 .service-card::before{
+
   content:"";
 
   position:absolute;
+
   inset:0;
 
   background:linear-gradient(
@@ -968,21 +1324,27 @@ button{
   opacity:0;
 
   transition:.4s ease;
+
 }
 
 .service-card:hover::before{
+
   opacity:1;
+
 }
 
 .service-num{
+
   color:var(--red);
 
   font-family:var(--display);
 
   font-size:13px;
+
 }
 
 .service-card h3{
+
   position:relative;
 
   margin-top:20px;
@@ -990,9 +1352,11 @@ button{
   font-family:var(--display);
 
   font-size:26px;
+
 }
 
 .service-card p{
+
   position:relative;
 
   max-width:42ch;
@@ -1004,16 +1368,21 @@ button{
   font-size:15px;
 
   line-height:1.75;
+
 }
 
 .service-arrow{
+
   position:relative;
 
   display:flex;
+
   align-items:center;
+
   justify-content:center;
 
   width:38px;
+
   height:38px;
 
   margin-top:28px;
@@ -1023,14 +1392,17 @@ button{
   border-radius:50%;
 
   transition:.4s ease;
+
 }
 
 .service-card:hover .service-arrow{
+
   background:var(--red);
 
   border-color:var(--red);
 
   transform:rotate(45deg);
+
 }
 
 
@@ -1039,24 +1411,31 @@ button{
 ============================================================ */
 
 .skills-layout{
+
   display:grid;
 
   grid-template-columns:repeat(3,1fr);
 
   border-top:1px solid var(--border);
+
 }
 
 .skill-col{
+
   padding:40px 36px;
 
   border-left:1px solid var(--border);
+
 }
 
 .skill-col:last-child{
+
   border-right:1px solid var(--border);
+
 }
 
 .skill-col-title{
+
   color:var(--red);
 
   font-size:12px;
@@ -1066,9 +1445,11 @@ button{
   letter-spacing:1.5px;
 
   text-transform:uppercase;
+
 }
 
 .chip-list{
+
   display:flex;
 
   flex-wrap:wrap;
@@ -1076,9 +1457,11 @@ button{
   gap:10px;
 
   margin-top:26px;
+
 }
 
 .chip{
+
   padding:9px 16px;
 
   border:1px solid var(--border);
@@ -1088,14 +1471,17 @@ button{
   font-size:13px;
 
   transition:.3s ease;
+
 }
 
 .chip:hover{
+
   color:var(--red);
 
   border-color:var(--red);
 
   transform:translateY(-2px);
+
 }
 
 
@@ -1104,14 +1490,17 @@ button{
 ============================================================ */
 
 .work-grid{
+
   display:grid;
 
   grid-template-columns:1fr 1fr;
 
   gap:28px;
+
 }
 
 .work-card{
+
   overflow:hidden;
 
   background:var(--card);
@@ -1121,43 +1510,54 @@ button{
   border-radius:18px;
 
   transition:.4s ease;
+
 }
 
 .work-card:hover{
+
   transform:translateY(-6px);
 
   border-color:var(--border-strong);
+
 }
 
 .work-visual{
+
   position:relative;
 
   aspect-ratio:16/10;
 
   background:
+
     radial-gradient(
       circle at 30% 20%,
       rgba(255,43,43,.16),
       transparent 55%
     ),
+
     linear-gradient(
       150deg,
       #191919,
       #0d0d0d
     );
+
 }
 
 .work-visual::after{
+
   content:"";
 
   position:absolute;
+
   inset:0;
 
   background-image:
+
     linear-gradient(
       rgba(255,255,255,.05) 1px,
       transparent 1px
     ),
+
     linear-gradient(
       90deg,
       rgba(255,255,255,.05) 1px,
@@ -1165,12 +1565,15 @@ button{
     );
 
   background-size:32px 32px;
+
 }
 
 .work-visual .tag{
+
   position:absolute;
 
   top:20px;
+
   left:20px;
 
   z-index:2;
@@ -1188,26 +1591,33 @@ button{
   letter-spacing:1.5px;
 
   text-transform:uppercase;
+
 }
 
 .work-body{
+
   display:flex;
 
   align-items:flex-end;
+
   justify-content:space-between;
 
   gap:20px;
 
   padding:28px 30px 32px;
+
 }
 
 .work-body h3{
+
   font-family:var(--display);
 
   font-size:21px;
+
 }
 
 .work-body p{
+
   margin-top:8px;
 
   color:var(--muted);
@@ -1215,16 +1625,21 @@ button{
   font-size:14px;
 
   line-height:1.6;
+
 }
 
 .work-arrow{
+
   display:flex;
+
   align-items:center;
+
   justify-content:center;
 
   flex-shrink:0;
 
   width:44px;
+
   height:44px;
 
   border:1px solid var(--border-strong);
@@ -1232,14 +1647,17 @@ button{
   border-radius:50%;
 
   transition:.4s ease;
+
 }
 
 .work-card:hover .work-arrow{
+
   background:var(--red);
 
   border-color:var(--red);
 
   transform:rotate(45deg);
+
 }
 
 
@@ -1248,10 +1666,13 @@ button{
 ============================================================ */
 
 .process-list{
+
   border-top:1px solid var(--border);
+
 }
 
 .process-row{
+
   display:grid;
 
   grid-template-columns:100px 1fr 1.4fr;
@@ -1263,21 +1684,27 @@ button{
   padding:38px 0;
 
   border-bottom:1px solid var(--border);
+
 }
 
 .process-num{
+
   color:var(--red);
 
   font-family:var(--display);
+
 }
 
 .process-row h3{
+
   font-family:var(--display);
 
   font-size:26px;
+
 }
 
 .process-row p{
+
   max-width:46ch;
 
   color:var(--muted);
@@ -1285,6 +1712,7 @@ button{
   font-size:15px;
 
   line-height:1.7;
+
 }
 
 
@@ -1293,6 +1721,7 @@ button{
 ============================================================ */
 
 .why-row{
+
   display:grid;
 
   grid-template-columns:1.3fr 1.7fr;
@@ -1302,19 +1731,25 @@ button{
   padding:44px 0;
 
   border-top:1px solid var(--border);
+
 }
 
 .why-row:last-child{
+
   border-bottom:1px solid var(--border);
+
 }
 
 .why-row h3{
+
   font-family:var(--display);
 
   font-size:clamp(25px,3vw,34px);
+
 }
 
 .why-row p{
+
   max-width:52ch;
 
   color:var(--muted);
@@ -1322,6 +1757,7 @@ button{
   font-size:16px;
 
   line-height:1.75;
+
 }
 
 
@@ -1330,14 +1766,17 @@ button{
 ============================================================ */
 
 .statement{
+
   padding:220px 0;
 
   text-align:center;
 
   border-top:1px solid var(--border);
+
 }
 
 .statement h2{
+
   font-family:var(--display);
 
   font-size:clamp(38px,6vw,72px);
@@ -1345,10 +1784,13 @@ button{
   line-height:1.14;
 
   letter-spacing:-.025em;
+
 }
 
 .accent-line{
+
   color:var(--red);
+
 }
 
 
@@ -1357,6 +1799,7 @@ button{
 ============================================================ */
 
 .contact-layout{
+
   display:grid;
 
   grid-template-columns:1.2fr .8fr;
@@ -1364,9 +1807,11 @@ button{
   gap:60px;
 
   align-items:end;
+
 }
 
 .contact-copy p{
+
   max-width:50ch;
 
   margin-top:24px;
@@ -1376,22 +1821,29 @@ button{
   font-size:17px;
 
   line-height:1.8;
+
 }
 
 .contact-cta{
+
   margin-top:44px;
+
 }
 
 .contact-channels{
+
   display:flex;
 
   flex-direction:column;
+
 }
 
 .channel-row{
+
   display:flex;
 
   align-items:center;
+
   justify-content:space-between;
 
   padding:22px 0;
@@ -1399,21 +1851,29 @@ button{
   border-top:1px solid var(--border);
 
   transition:.3s ease;
+
 }
 
 .channel-row:last-child{
+
   border-bottom:1px solid var(--border);
+
 }
 
 .channel-row:hover{
+
   padding-left:10px;
+
 }
 
 .channel-row:hover .v{
+
   color:var(--red);
+
 }
 
 .channel-row .k{
+
   color:var(--muted);
 
   font-size:11px;
@@ -1421,12 +1881,15 @@ button{
   letter-spacing:1.5px;
 
   text-transform:uppercase;
+
 }
 
 .channel-row .v{
+
   font-family:var(--display);
 
   font-size:16px;
+
 }
 
 
@@ -1459,10 +1922,13 @@ button{
   pointer-events:none;
 
   transition:
+
     opacity .6s var(--ease),
+
     visibility .6s var(--ease);
 
   overflow:auto;
+
 }
 
 .thank-you-page.show{
@@ -1484,6 +1950,7 @@ button{
   pointer-events:none;
 
   background:
+
     radial-gradient(
       circle at 50% 20%,
       rgba(255,43,43,.15),
@@ -1503,10 +1970,12 @@ button{
   opacity:.45;
 
   background-image:
+
     linear-gradient(
       rgba(255,255,255,.035) 1px,
       transparent 1px
     ),
+
     linear-gradient(
       90deg,
       rgba(255,255,255,.035) 1px,
@@ -1542,6 +2011,7 @@ button{
   border-radius:28px;
 
   background:
+
     linear-gradient(
       180deg,
       rgba(24,24,24,.95),
@@ -1549,13 +2019,14 @@ button{
     );
 
   box-shadow:
+
     0 40px 120px rgba(0,0,0,.65);
 
 }
 
 .thank-you-line{
 
-  width:80px;
+  width:0;
 
   height:2px;
 
@@ -1576,6 +2047,7 @@ button{
   letter-spacing:3px;
 
   text-transform:uppercase;
+
 }
 
 .thank-you-content h1{
@@ -1637,6 +2109,32 @@ button{
   letter-spacing:1.5px;
 
   text-transform:uppercase;
+
+}
+
+
+/* ============================================================
+   COUNTDOWN
+============================================================ */
+
+.thank-you-countdown{
+
+  margin-top:24px;
+
+  color:#777;
+
+  font-size:12px;
+
+  letter-spacing:.5px;
+
+}
+
+.thank-you-countdown strong{
+
+  color:var(--red);
+
+  font-size:15px;
+
 }
 
 
@@ -1649,6 +2147,7 @@ footer{
   padding:60px 0 40px;
 
   border-top:1px solid var(--border);
+
 }
 
 .footer-top{
@@ -1662,6 +2161,7 @@ footer{
   gap:24px;
 
   flex-wrap:wrap;
+
 }
 
 .footer-logo{
@@ -1671,11 +2171,13 @@ footer{
   font-size:26px;
 
   font-weight:600;
+
 }
 
 .footer-logo span{
 
   color:var(--red);
+
 }
 
 .footer-role{
@@ -1685,6 +2187,7 @@ footer{
   color:var(--muted);
 
   font-size:13px;
+
 }
 
 .footer-social{
@@ -1692,6 +2195,7 @@ footer{
   display:flex;
 
   gap:28px;
+
 }
 
 .footer-social a{
@@ -1701,11 +2205,13 @@ footer{
   font-size:13px;
 
   transition:.3s ease;
+
 }
 
 .footer-social a:hover{
 
   color:var(--red);
+
 }
 
 .footer-bottom{
@@ -1727,6 +2233,7 @@ footer{
   color:var(--muted);
 
   font-size:12px;
+
 }
 
 
@@ -1739,6 +2246,7 @@ footer{
   opacity:0;
 
   transform:translateY(28px);
+
 }
 
 
@@ -1884,6 +2392,22 @@ footer{
 
 }
 
+@media(max-width:600px){
+
+  .thank-you-actions{
+
+    flex-direction:column;
+
+  }
+
+  .thank-you-actions .btn{
+
+    width:100%;
+
+  }
+
+}
+
 
 /* ============================================================
    REDUCED MOTION
@@ -1904,6 +2428,7 @@ footer{
 }
 
 </style>
+
 </head>
 
 
@@ -1923,9 +2448,11 @@ footer{
 
 <nav class="nav">
 
+
 <a href="#hero" class="nav-logo">
 RADHIKA<span>.</span>
 </a>
+
 
 <div class="nav-links">
 
@@ -1965,7 +2492,9 @@ aria-expanded="false"
 </div>
 
 
-<!-- MOBILE MENU -->
+<!-- ============================================================
+     MOBILE MENU
+============================================================ -->
 
 <div class="mobile-menu" id="mobileMenu">
 
@@ -1986,6 +2515,7 @@ Let's Talk <span class="arrow">↗</span>
 </a>
 
 </div>
+
 
 
 <!-- ============================================================
@@ -2018,22 +2548,29 @@ Hello, I'm Radhika 👋
 
 <h1 class="hero-heading">
 
+
 <span class="line">
 <span>I BUILD.</span>
 </span>
+
 
 <span class="line">
 <span>I MARKET.</span>
 </span>
 
+
 <span class="line">
 <span>I <span class="accent-word">CREATE.</span></span>
 </span>
 
+
 </h1>
 
 
-<p class="hero-sub reveal" id="heroSub">
+<p
+class="hero-sub reveal"
+id="heroSub"
+>
 
 I'm Radhika Barot — a Digital Marketing Consultant,
 Video Editor and Coder focused on combining technology,
@@ -2043,7 +2580,10 @@ that connect with people and create meaningful impact.
 </p>
 
 
-<div class="hero-ctas reveal" id="heroCtas">
+<div
+class="hero-ctas reveal"
+id="heroCtas"
+>
 
 
 <a
@@ -2051,8 +2591,11 @@ href="#work"
 class="btn btn-fill"
 id="viewWorkBtn"
 >
+
 View My Work
+
 <span class="arrow">↗</span>
+
 </a>
 
 
@@ -2061,15 +2604,21 @@ href="#contact"
 class="btn btn-line"
 id="letsConnectBtn"
 >
+
 Let's Connect
+
 <span class="arrow">↗</span>
+
 </a>
 
 
 </div>
 
 
-<div class="hero-credibility reveal" id="heroCred">
+<div
+class="hero-credibility reveal"
+id="heroCred"
+>
 
 <span class="dot"></span>
 
@@ -2081,9 +2630,15 @@ Digital Marketing • Video Editing • Technology
 </div>
 
 
-<!-- FORM -->
 
-<div class="hero-right reveal" id="heroForm">
+<!-- ============================================================
+     LEAD FORM
+============================================================ -->
+
+<div
+class="hero-right reveal"
+id="heroForm"
+>
 
 
 <div class="hero-form-card">
@@ -2118,6 +2673,7 @@ data-field="name"
 Name
 </label>
 
+
 <input
 type="text"
 id="f-name"
@@ -2126,11 +2682,13 @@ placeholder="Your full name"
 autocomplete="name"
 >
 
+
 <div class="form-error">
 Please enter your name.
 </div>
 
 </div>
+
 
 
 <div class="field-row">
@@ -2145,6 +2703,7 @@ data-field="email"
 Email
 </label>
 
+
 <input
 type="email"
 id="f-email"
@@ -2153,11 +2712,13 @@ placeholder="you@email.com"
 autocomplete="email"
 >
 
+
 <div class="form-error">
 Enter a valid email.
 </div>
 
 </div>
+
 
 
 <div
@@ -2169,6 +2730,7 @@ data-field="phone"
 Phone
 </label>
 
+
 <input
 type="tel"
 id="f-phone"
@@ -2176,6 +2738,7 @@ name="phone"
 placeholder="+91 00000 00000"
 autocomplete="tel"
 >
+
 
 <div class="form-error">
 Enter a valid phone number.
@@ -2186,6 +2749,7 @@ Enter a valid phone number.
 </div>
 
 
+
 <div
 class="field"
 data-field="help"
@@ -2194,6 +2758,7 @@ data-field="help"
 <label for="f-help">
 What do you need help with?
 </label>
+
 
 <select
 id="f-help"
@@ -2223,11 +2788,13 @@ Select an option
 
 </select>
 
+
 <div class="form-error">
 Please choose an option.
 </div>
 
 </div>
+
 
 
 <div
@@ -2239,11 +2806,13 @@ data-field="message"
 Message
 </label>
 
+
 <textarea
 id="f-message"
 name="message"
 placeholder="Tell me about your project..."
 ></textarea>
+
 
 <div class="form-error">
 Please add a short message.
@@ -2252,12 +2821,17 @@ Please add a short message.
 </div>
 
 
+
 <button
 type="submit"
 class="btn btn-fill form-submit"
+id="submitLeadBtn"
 >
+
 Send Inquiry
+
 <span class="arrow">↗</span>
+
 </button>
 
 
@@ -2279,13 +2853,18 @@ I'll get back to you as soon as possible.
 </section>
 
 
+
 <!-- ============================================================
      ABOUT
 ============================================================ -->
 
-<section class="section" id="about">
+<section
+class="section"
+id="about"
+>
 
 <div class="wrap">
+
 
 <div class="about-layout">
 
@@ -2306,21 +2885,25 @@ More than one skill. One creative mind.
 
 <div class="about-copy reveal">
 
+
 <p>
 I'm Radhika Barot, a BSc IT graduate with a passion
 for technology, digital marketing and visual creativity.
 </p>
+
 
 <p>
 My work sits at the intersection of code,
 marketing and content.
 </p>
 
+
 <p>
 I enjoy understanding how digital products work,
 how brands communicate online and how creative ideas
 can turn attention into meaningful action.
 </p>
+
 
 <p>
 From building digital experiences to planning
@@ -2329,9 +2912,11 @@ I bring a combination of technical thinking and creative
 execution to every project.
 </p>
 
+
 </div>
 
 </div>
+
 
 
 <div class="identity-strip reveal">
@@ -2396,11 +2981,15 @@ Problem Solving
 </section>
 
 
+
 <!-- ============================================================
      EXPERTISE
 ============================================================ -->
 
-<section class="section" id="expertise">
+<section
+class="section"
+id="expertise"
+>
 
 <div class="wrap">
 
@@ -2416,6 +3005,7 @@ What I bring to the table.
 </h2>
 
 </div>
+
 
 
 <div class="service-grid reveal">
@@ -2444,6 +3034,7 @@ and performance-focused marketing.
 </div>
 
 
+
 <div class="service-card">
 
 <div class="service-num">
@@ -2467,6 +3058,7 @@ business objectives.
 </div>
 
 
+
 <div class="service-card">
 
 <div class="service-num">
@@ -2488,6 +3080,7 @@ a brand's visual identity.
 </div>
 
 </div>
+
 
 
 <div class="service-card">
@@ -2520,11 +3113,15 @@ experiences.
 </section>
 
 
+
 <!-- ============================================================
      SKILLS
 ============================================================ -->
 
-<section class="section" id="skills">
+<section
+class="section"
+id="skills"
+>
 
 <div class="wrap">
 
@@ -2551,6 +3148,7 @@ Technical thinking. Creative execution.
 Digital Marketing
 </div>
 
+
 <div class="chip-list">
 
 <span class="chip">Meta Ads</span>
@@ -2568,11 +3166,13 @@ Digital Marketing
 </div>
 
 
+
 <div class="skill-col">
 
 <div class="skill-col-title">
 Creative
 </div>
+
 
 <div class="chip-list">
 
@@ -2589,11 +3189,13 @@ Creative
 </div>
 
 
+
 <div class="skill-col">
 
 <div class="skill-col-title">
 Technology
 </div>
+
 
 <div class="chip-list">
 
@@ -2629,11 +3231,15 @@ Technology
 </section>
 
 
+
 <!-- ============================================================
      WORK
 ============================================================ -->
 
-<section class="section" id="work">
+<section
+class="section"
+id="work"
+>
 
 <div class="wrap">
 
@@ -2664,6 +3270,7 @@ Digital Marketing
 
 </div>
 
+
 <div class="work-body">
 
 <div>
@@ -2679,6 +3286,7 @@ and online growth.
 
 </div>
 
+
 <div class="work-arrow">
 ↗
 </div>
@@ -2686,6 +3294,7 @@ and online growth.
 </div>
 
 </div>
+
 
 
 <div class="work-card">
@@ -2697,6 +3306,7 @@ Meta Ads
 </span>
 
 </div>
+
 
 <div class="work-body">
 
@@ -2713,6 +3323,7 @@ around clear objectives.
 
 </div>
 
+
 <div class="work-arrow">
 ↗
 </div>
@@ -2720,6 +3331,7 @@ around clear objectives.
 </div>
 
 </div>
+
 
 
 <div class="work-card">
@@ -2731,6 +3343,7 @@ Video Editing
 </span>
 
 </div>
+
 
 <div class="work-body">
 
@@ -2747,6 +3360,7 @@ and communicate clearly.
 
 </div>
 
+
 <div class="work-arrow">
 ↗
 </div>
@@ -2754,6 +3368,7 @@ and communicate clearly.
 </div>
 
 </div>
+
 
 
 <div class="work-card">
@@ -2765,6 +3380,7 @@ Web / Technology
 </span>
 
 </div>
+
 
 <div class="work-body">
 
@@ -2780,6 +3396,7 @@ and clean execution.
 </p>
 
 </div>
+
 
 <div class="work-arrow">
 ↗
@@ -2797,11 +3414,15 @@ and clean execution.
 </section>
 
 
+
 <!-- ============================================================
      PROCESS
 ============================================================ -->
 
-<section class="section" id="process">
+<section
+class="section"
+id="process"
+>
 
 <div class="wrap">
 
@@ -2899,11 +3520,15 @@ keep moving forward.
 </section>
 
 
+
 <!-- ============================================================
      WHY ME
 ============================================================ -->
 
-<section class="section" id="why">
+<section
+class="section"
+id="why"
+>
 
 <div class="wrap">
 
@@ -2986,6 +3611,7 @@ and digital strategies.
 </section>
 
 
+
 <!-- ============================================================
      BIG STATEMENT
 ============================================================ -->
@@ -2997,6 +3623,7 @@ and digital strategies.
 <h2 id="statementText">
 
 I don't just<br>
+
 make things look good.<br><br>
 
 I make them<br>
@@ -3012,11 +3639,15 @@ mean something.
 </section>
 
 
+
 <!-- ============================================================
      CONTACT
 ============================================================ -->
 
-<section class="section" id="contact">
+<section
+class="section"
+id="contact"
+>
 
 <div class="wrap">
 
@@ -3030,9 +3661,11 @@ mean something.
 Contact / 08
 </span>
 
+
 <h2 class="heading-lg">
 Have an idea? Let's build it.
 </h2>
+
 
 <p>
 Whether you're looking for digital marketing support,
@@ -3046,11 +3679,15 @@ href="#hero"
 class="btn btn-fill contact-cta"
 id="contactLetsTalk"
 >
+
 Let's Talk
+
 <span class="arrow">↗</span>
+
 </a>
 
 </div>
+
 
 
 <div class="contact-channels reveal">
@@ -3117,6 +3754,7 @@ WhatsApp
 </section>
 
 
+
 <!-- ============================================================
      FOOTER
 ============================================================ -->
@@ -3180,6 +3818,7 @@ Built with intent.
 </footer>
 
 
+
 <!-- ============================================================
      THANK YOU PAGE
 ============================================================ -->
@@ -3189,6 +3828,7 @@ class="thank-you-page"
 id="thankYouPage"
 aria-hidden="true"
 >
+
 
 <div class="thank-you-bg"></div>
 
@@ -3212,9 +3852,14 @@ THANK <span>YOU.</span>
 
 
 <p>
-Thank you for reaching out. Your inquiry has been
-received successfully. I appreciate your interest
-and will get back to you as soon as possible.
+
+Thank you for reaching out.
+
+Your inquiry has been received successfully.
+
+I appreciate your interest and will get back to you
+as soon as possible.
+
 </p>
 
 
@@ -3226,8 +3871,11 @@ href="#hero"
 class="btn btn-fill"
 id="thankHomeBtn"
 >
+
 Back to Home
+
 <span class="arrow">↗</span>
+
 </a>
 
 
@@ -3236,22 +3884,49 @@ href="#work"
 class="btn btn-line"
 id="thankWorkBtn"
 >
+
 View My Work
+
 <span class="arrow">↗</span>
+
 </a>
 
 
 </div>
 
 
+<!-- COUNTDOWN -->
+
+<div class="thank-you-countdown">
+
+Returning to homepage in
+
+<strong id="thankCountdown">
+10
+</strong>
+
+seconds
+
+</div>
+
+
 <div class="thank-you-meta">
-Radhika Barot • Digital Marketing • Creative • Technology
+
+Radhika Barot
+•
+Digital Marketing
+•
+Creative
+•
+Technology
+
 </div>
 
 
 </div>
 
 </div>
+
 
 
 <!-- ============================================================
@@ -3262,12 +3937,14 @@ Radhika Barot • Digital Marketing • Creative • Technology
 
 
 /* ============================================================
-   META PIXEL
+   META PIXEL EVENT TRACKER
 ============================================================ */
 
 function trackMetaEvent(eventName){
 
-  if(typeof window.fbq === "function"){
+  if(
+    typeof window.fbq === "function"
+  ){
 
     window.fbq(
       "track",
@@ -3283,26 +3960,41 @@ function trackMetaEvent(eventName){
 }
 
 
+
 /* ============================================================
-   META EVENTS
+   META BUTTON EVENTS
 ============================================================ */
 
 (function(){
 
   const viewWork =
-    document.getElementById("viewWorkBtn");
+    document.getElementById(
+      "viewWorkBtn"
+    );
+
 
   const letsConnect =
-    document.getElementById("letsConnectBtn");
+    document.getElementById(
+      "letsConnectBtn"
+    );
+
 
   const navLetsTalk =
-    document.getElementById("navLetsTalk");
+    document.getElementById(
+      "navLetsTalk"
+    );
+
 
   const mobileLetsTalk =
-    document.getElementById("mobileLetsTalk");
+    document.getElementById(
+      "mobileLetsTalk"
+    );
+
 
   const contactLetsTalk =
-    document.getElementById("contactLetsTalk");
+    document.getElementById(
+      "contactLetsTalk"
+    );
 
 
   if(viewWork){
@@ -3311,7 +4003,9 @@ function trackMetaEvent(eventName){
       "click",
       function(){
 
-        trackMetaEvent("ViewContent");
+        trackMetaEvent(
+          "ViewContent"
+        );
 
       }
     );
@@ -3320,10 +4014,15 @@ function trackMetaEvent(eventName){
 
 
   [
+
     letsConnect,
+
     navLetsTalk,
+
     mobileLetsTalk,
+
     contactLetsTalk
+
   ].forEach(function(button){
 
     if(button){
@@ -3332,7 +4031,9 @@ function trackMetaEvent(eventName){
         "click",
         function(){
 
-          trackMetaEvent("Contact");
+          trackMetaEvent(
+            "Contact"
+          );
 
         }
       );
@@ -3344,38 +4045,355 @@ function trackMetaEvent(eventName){
 })();
 
 
+
 /* ============================================================
-   FORM
+   FORM + THANK YOU
 ============================================================ */
 
 (function(){
 
+
   const form =
-    document.getElementById("leadForm");
+    document.getElementById(
+      "leadForm"
+    );
+
 
   const thankYou =
-    document.getElementById("thankYouPage");
+    document.getElementById(
+      "thankYouPage"
+    );
 
 
-  if(!form || !thankYou) return;
+  const countdown =
+    document.getElementById(
+      "thankCountdown"
+    );
 
+
+  const submitButton =
+    document.getElementById(
+      "submitLeadBtn"
+    );
+
+
+  if(
+    !form ||
+    !thankYou
+  ){
+
+    return;
+
+  }
+
+
+
+  /* ==========================================================
+     EMAIL VALIDATION
+  ========================================================== */
 
   function validEmail(value){
 
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(
+      value
+    );
 
   }
 
+
+
+  /* ==========================================================
+     PHONE VALIDATION
+  ========================================================== */
 
   function validPhone(value){
 
-    return /^[0-9+()\-\s]{7,}$/.test(value);
+    return /^[0-9+()\-\s]{7,}$/.test(
+      value
+    );
 
   }
 
 
+
+  /* ==========================================================
+     SHOW THANK YOU
+  ========================================================== */
+
+  function showThankYou(){
+
+
+    /* ----------------------------------------------
+       Prevent duplicate Lead event
+    ---------------------------------------------- */
+
+    if(
+      sessionStorage.getItem(
+        "radhikaLeadTracked"
+      ) !== "1"
+    ){
+
+      trackMetaEvent(
+        "Lead"
+      );
+
+
+      sessionStorage.setItem(
+        "radhikaLeadTracked",
+        "1"
+      );
+
+    }
+
+
+
+    /* ----------------------------------------------
+       Show Thank You
+    ---------------------------------------------- */
+
+    thankYou.classList.add(
+      "show"
+    );
+
+
+    thankYou.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+
+
+    document.body.style.overflow =
+      "hidden";
+
+
+
+    /* ----------------------------------------------
+       Reset form
+    ---------------------------------------------- */
+
+    form.reset();
+
+
+    /* ----------------------------------------------
+       Reset submit button
+    ---------------------------------------------- */
+
+    if(submitButton){
+
+      submitButton.disabled =
+        false;
+
+      submitButton.innerHTML =
+        'Send Inquiry <span class="arrow">↗</span>';
+
+    }
+
+
+
+    /* ----------------------------------------------
+       GSAP animation
+    ---------------------------------------------- */
+
+    if(
+      typeof gsap !== "undefined"
+    ){
+
+      gsap.fromTo(
+
+        ".thank-you-content",
+
+        {
+
+          opacity:0,
+
+          y:40,
+
+          scale:.97
+
+        },
+
+        {
+
+          opacity:1,
+
+          y:0,
+
+          scale:1,
+
+          duration:.8,
+
+          ease:"power3.out"
+
+        }
+
+      );
+
+
+      gsap.fromTo(
+
+        ".thank-you-line",
+
+        {
+
+          width:0
+
+        },
+
+        {
+
+          width:80,
+
+          duration:.7,
+
+          delay:.2,
+
+          ease:"power3.out"
+
+        }
+
+      );
+
+    }
+
+
+
+    /* ----------------------------------------------
+       COUNTDOWN
+    ---------------------------------------------- */
+
+    let seconds = 10;
+
+
+    countdown.textContent =
+      seconds;
+
+
+    clearInterval(
+      window.radhikaCountdownTimer
+    );
+
+
+    window.radhikaCountdownTimer =
+      setInterval(
+
+        function(){
+
+
+          seconds--;
+
+
+          countdown.textContent =
+            seconds;
+
+
+          if(seconds <= 0){
+
+            clearInterval(
+              window.radhikaCountdownTimer
+            );
+
+
+            closeThankYou(
+              "hero"
+            );
+
+          }
+
+
+        },
+
+        1000
+
+      );
+
+  }
+
+
+
+  /* ==========================================================
+     CLOSE THANK YOU
+  ========================================================== */
+
+  function closeThankYou(
+    destination
+  ){
+
+
+    clearInterval(
+      window.radhikaCountdownTimer
+    );
+
+
+    thankYou.classList.remove(
+      "show"
+    );
+
+
+    thankYou.setAttribute(
+      "aria-hidden",
+      "true"
+    );
+
+
+    document.body.style.overflow =
+      "";
+
+
+    /* ----------------------------------------------
+       Reset Lead tracker.
+
+       This allows another real form submission
+       later in the same browser session.
+    ---------------------------------------------- */
+
+    sessionStorage.removeItem(
+      "radhikaLeadTracked"
+    );
+
+
+    setTimeout(
+
+      function(){
+
+        const target =
+          document.getElementById(
+            destination
+          );
+
+
+        if(target){
+
+          target.scrollIntoView({
+            behavior:"smooth"
+          });
+
+        }else{
+
+          window.scrollTo({
+            top:0,
+            behavior:"smooth"
+          });
+
+        }
+
+      },
+
+      50
+
+    );
+
+  }
+
+
+
+  /* ==========================================================
+     FORM SUBMIT
+  ========================================================== */
+
   form.addEventListener(
+
     "submit",
+
     function(event){
 
       event.preventDefault();
@@ -3384,9 +4402,16 @@ function trackMetaEvent(eventName){
       let valid = true;
 
 
+
+      /* ----------------------------------------------
+         VALIDATION RULES
+      ---------------------------------------------- */
+
       const checks = [
 
+
         {
+
           name:"name",
 
           test:function(value){
@@ -3397,29 +4422,39 @@ function trackMetaEvent(eventName){
 
         },
 
+
         {
+
           name:"email",
 
           test:function(value){
 
-            return validEmail(value);
+            return validEmail(
+              value
+            );
 
           }
 
         },
 
+
         {
+
           name:"phone",
 
           test:function(value){
 
-            return validPhone(value);
+            return validPhone(
+              value
+            );
 
           }
 
         },
 
+
         {
+
           name:"help",
 
           test:function(value){
@@ -3430,7 +4465,9 @@ function trackMetaEvent(eventName){
 
         },
 
+
         {
+
           name:"message",
 
           test:function(value){
@@ -3444,56 +4481,78 @@ function trackMetaEvent(eventName){
       ];
 
 
-      checks.forEach(function(check){
 
-        const field =
-          form.querySelector(
-            '[data-field="' +
-            check.name +
-            '"]'
-          );
+      /* ----------------------------------------------
+         RUN VALIDATION
+      ---------------------------------------------- */
 
-        const input =
-          form.elements[check.name];
-
-        const error =
-          field.querySelector(
-            ".form-error"
-          );
+      checks.forEach(
+        function(check){
 
 
-        const okay =
-          check.test(
-            input.value || ""
-          );
+          const field =
+            form.querySelector(
+              '[data-field="' +
+              check.name +
+              '"]'
+            );
 
 
-        if(!okay){
+          const input =
+            form.elements[
+              check.name
+            ];
 
-          valid = false;
 
-          field.classList.add(
-            "invalid"
-          );
+          const error =
+            field.querySelector(
+              ".form-error"
+            );
 
-          error.classList.add(
-            "show"
-          );
 
-        }else{
+          const okay =
+            check.test(
+              input.value || ""
+            );
 
-          field.classList.remove(
-            "invalid"
-          );
 
-          error.classList.remove(
-            "show"
-          );
+          if(!okay){
+
+            valid = false;
+
+
+            field.classList.add(
+              "invalid"
+            );
+
+
+            error.classList.add(
+              "show"
+            );
+
+
+          }else{
+
+
+            field.classList.remove(
+              "invalid"
+            );
+
+
+            error.classList.remove(
+              "show"
+            );
+
+          }
 
         }
+      );
 
-      });
 
+
+      /* ----------------------------------------------
+         STOP IF INVALID
+      ---------------------------------------------- */
 
       if(!valid){
 
@@ -3502,203 +4561,188 @@ function trackMetaEvent(eventName){
       }
 
 
-      /* ======================================================
-         META LEAD EVENT
-      ====================================================== */
 
-      trackMetaEvent("Lead");
+      /* ----------------------------------------------
+         PREVENT DOUBLE CLICK
+      ---------------------------------------------- */
 
+      if(
+        submitButton.disabled
+      ){
 
-      /* ======================================================
-         SHOW THANK YOU PAGE
-      ====================================================== */
-
-      thankYou.classList.add("show");
-
-      thankYou.setAttribute(
-        "aria-hidden",
-        "false"
-      );
-
-      document.body.style.overflow =
-        "hidden";
-
-
-      /* ======================================================
-         THANK YOU ANIMATION
-      ====================================================== */
-
-      if(typeof gsap !== "undefined"){
-
-        gsap.fromTo(
-          ".thank-you-content",
-          {
-            opacity:0,
-            y:40,
-            scale:.97
-          },
-          {
-            opacity:1,
-            y:0,
-            scale:1,
-            duration:.8,
-            ease:"power3.out"
-          }
-        );
-
-
-        gsap.fromTo(
-          ".thank-you-line",
-          {
-            width:0
-          },
-          {
-            width:80,
-            duration:.7,
-            delay:.2,
-            ease:"power3.out"
-          }
-        );
+        return;
 
       }
 
+
+      submitButton.disabled =
+        true;
+
+
+      submitButton.innerHTML =
+        "Sending...";
+
+
+
+      /* ==================================================
+         IMPORTANT
+
+         YOUR CURRENT HTML DOES NOT HAVE A REAL
+         EMAIL/API FORM BACKEND.
+
+         Therefore the line below treats a valid
+         browser submission as successful.
+
+         If you have Formspree, EmailJS, Web3Forms,
+         PHP, Firebase or another API, put that
+         request here and call showThankYou() ONLY
+         after the request succeeds.
+      ================================================== */
+
+
+      setTimeout(
+
+        function(){
+
+          showThankYou();
+
+        },
+
+        500
+
+      );
+
     }
+
   );
 
 
+
   /* ==========================================================
-     REMOVE VALIDATION ERRORS
+     REMOVE VALIDATION ERROR WHILE TYPING
   ========================================================== */
 
   form.querySelectorAll(
     "input, select, textarea"
-  ).forEach(function(input){
+  ).forEach(
 
-    input.addEventListener(
-      "input",
-      function(){
-
-        const field =
-          input.closest(".field");
-
-        if(!field) return;
+    function(input){
 
 
-        field.classList.remove(
-          "invalid"
-        );
+      input.addEventListener(
+
+        "input",
+
+        function(){
 
 
-        const error =
-          field.querySelector(
-            ".form-error"
+          const field =
+            input.closest(
+              ".field"
+            );
+
+
+          if(!field){
+
+            return;
+
+          }
+
+
+          field.classList.remove(
+            "invalid"
           );
 
 
-        if(error){
+          const error =
+            field.querySelector(
+              ".form-error"
+            );
 
-          error.classList.remove(
-            "show"
-          );
+
+          if(error){
+
+            error.classList.remove(
+              "show"
+            );
+
+          }
 
         }
 
-      }
-    );
+      );
 
-  });
+    }
 
-
-})();
+  );
 
 
-/* ============================================================
-   THANK YOU PAGE NAVIGATION
-============================================================ */
 
-(function(){
+  /* ==========================================================
+     HOME BUTTON
+  ========================================================== */
 
-  const thankYou =
-    document.getElementById(
-      "thankYouPage"
-    );
-
-  const homeBtn =
+  const homeButton =
     document.getElementById(
       "thankHomeBtn"
     );
 
-  const workBtn =
+
+  if(homeButton){
+
+    homeButton.addEventListener(
+
+      "click",
+
+      function(event){
+
+        event.preventDefault();
+
+        closeThankYou(
+          "hero"
+        );
+
+      }
+
+    );
+
+  }
+
+
+
+  /* ==========================================================
+     WORK BUTTON
+  ========================================================== */
+
+  const workButton =
     document.getElementById(
       "thankWorkBtn"
     );
 
 
-  function closeThankYou(){
+  if(workButton){
 
-    thankYou.classList.remove(
-      "show"
-    );
+    workButton.addEventListener(
 
-    thankYou.setAttribute(
-      "aria-hidden",
-      "true"
-    );
-
-    document.body.style.overflow =
-      "";
-
-  }
-
-
-  if(homeBtn){
-
-    homeBtn.addEventListener(
       "click",
-      function(){
 
-        closeThankYou();
+      function(event){
 
-        setTimeout(
-          function(){
+        event.preventDefault();
 
-            window.location.hash =
-              "hero";
-
-          },
-          50
+        closeThankYou(
+          "work"
         );
 
       }
+
     );
 
   }
 
-
-  if(workBtn){
-
-    workBtn.addEventListener(
-      "click",
-      function(){
-
-        closeThankYou();
-
-        setTimeout(
-          function(){
-
-            window.location.hash =
-              "work";
-
-          },
-          50
-        );
-
-      }
-    );
-
-  }
 
 })();
+
 
 
 /* ============================================================
@@ -3707,15 +4751,21 @@ function trackMetaEvent(eventName){
 
 (function(){
 
+
   const cursor =
-    document.getElementById("cursor");
+    document.getElementById(
+      "cursor"
+    );
 
 
   if(
+
     !cursor ||
+
     !window.matchMedia(
       "(pointer:fine)"
     ).matches
+
   ){
 
     return;
@@ -3724,14 +4774,18 @@ function trackMetaEvent(eventName){
 
 
   let mouseX = 0;
+
   let mouseY = 0;
 
   let currentX = 0;
+
   let currentY = 0;
 
 
   window.addEventListener(
+
     "mousemove",
+
     function(event){
 
       mouseX =
@@ -3741,6 +4795,7 @@ function trackMetaEvent(eventName){
         event.clientY;
 
     }
+
   );
 
 
@@ -3748,6 +4803,7 @@ function trackMetaEvent(eventName){
 
     currentX +=
       (mouseX - currentX) * .18;
+
 
     currentY +=
       (mouseY - currentY) * .18;
@@ -3772,35 +4828,49 @@ function trackMetaEvent(eventName){
 
 
   document.querySelectorAll(
+
     "a, button, .chip, .service-card, .work-card, input, select, textarea"
-  ).forEach(function(element){
 
-    element.addEventListener(
-      "mouseenter",
-      function(){
+  ).forEach(
 
-        cursor.classList.add(
-          "hover"
-        );
-
-      }
-    );
+    function(element){
 
 
-    element.addEventListener(
-      "mouseleave",
-      function(){
+      element.addEventListener(
 
-        cursor.classList.remove(
-          "hover"
-        );
+        "mouseenter",
 
-      }
-    );
+        function(){
 
-  });
+          cursor.classList.add(
+            "hover"
+          );
+
+        }
+
+      );
+
+
+      element.addEventListener(
+
+        "mouseleave",
+
+        function(){
+
+          cursor.classList.remove(
+            "hover"
+          );
+
+        }
+
+      );
+
+    }
+
+  );
 
 })();
+
 
 
 /* ============================================================
@@ -3809,10 +4879,12 @@ function trackMetaEvent(eventName){
 
 (function(){
 
+
   const burger =
     document.getElementById(
       "burgerBtn"
     );
+
 
   const menu =
     document.getElementById(
@@ -3820,12 +4892,22 @@ function trackMetaEvent(eventName){
     );
 
 
-  if(!burger || !menu) return;
+  if(
+    !burger ||
+    !menu
+  ){
+
+    return;
+
+  }
 
 
   burger.addEventListener(
+
     "click",
+
     function(){
+
 
       const isOpen =
         menu.classList.toggle(
@@ -3839,32 +4921,44 @@ function trackMetaEvent(eventName){
       );
 
     }
+
   );
 
 
   menu.querySelectorAll(
     ".mnav"
-  ).forEach(function(link){
+  ).forEach(
 
-    link.addEventListener(
-      "click",
-      function(){
+    function(link){
 
-        menu.classList.remove(
-          "open"
-        );
 
-        burger.setAttribute(
-          "aria-expanded",
-          "false"
-        );
+      link.addEventListener(
 
-      }
-    );
+        "click",
 
-  });
+        function(){
+
+
+          menu.classList.remove(
+            "open"
+          );
+
+
+          burger.setAttribute(
+            "aria-expanded",
+            "false"
+          );
+
+        }
+
+      );
+
+    }
+
+  );
 
 })();
+
 
 
 /* ============================================================
@@ -3872,6 +4966,7 @@ function trackMetaEvent(eventName){
 ============================================================ */
 
 (function(){
+
 
   if(
     typeof gsap === "undefined"
@@ -3895,20 +4990,28 @@ function trackMetaEvent(eventName){
 
   if(reduced){
 
+
     document.querySelectorAll(
       ".reveal"
-    ).forEach(function(element){
+    ).forEach(
 
-      element.style.opacity = "1";
+      function(element){
 
-      element.style.transform =
-        "none";
+        element.style.opacity =
+          "1";
 
-    });
+        element.style.transform =
+          "none";
+
+      }
+
+    );
+
 
     return;
 
   }
+
 
 
   /* ==========================================================
@@ -3917,86 +5020,144 @@ function trackMetaEvent(eventName){
 
   const timeline =
     gsap.timeline({
+
       defaults:{
         ease:"power3.out"
       }
+
     });
 
 
   timeline.to(
+
     "#navOuter",
+
     {
+
       opacity:1,
+
       y:0,
+
       duration:.8
+
     },
+
     .1
+
   );
 
 
   timeline.from(
+
     ".hero-heading .line span",
+
     {
+
       yPercent:120,
+
       duration:1,
+
       stagger:.12
+
     },
+
     .25
+
   );
 
 
   timeline.to(
+
     "#heroLabel",
+
     {
+
       opacity:1,
+
       duration:.6
+
     },
+
     .15
+
   );
 
 
   timeline.to(
+
     "#heroSub",
+
     {
+
       opacity:1,
+
       y:0,
+
       duration:.8
+
     },
+
     .75
+
   );
 
 
   timeline.to(
+
     "#heroCtas",
+
     {
+
       opacity:1,
+
       y:0,
+
       duration:.8
+
     },
+
     .85
+
   );
 
 
   timeline.to(
+
     "#heroCred",
+
     {
+
       opacity:1,
+
       y:0,
+
       duration:.8
+
     },
+
     .95
+
   );
 
 
   timeline.to(
+
     "#heroForm",
+
     {
+
       opacity:1,
+
       y:0,
+
       duration:1
+
     },
+
     .6
+
   );
+
 
 
   /* ==========================================================
@@ -4004,38 +5165,62 @@ function trackMetaEvent(eventName){
   ========================================================== */
 
   gsap.utils
+
     .toArray(".reveal")
-    .filter(function(element){
 
-      return !element.closest(
-        ".hero"
-      );
+    .filter(
 
-    })
-    .forEach(function(element){
+      function(element){
 
-      gsap.to(
-        element,
-        {
-          opacity:1,
-          y:0,
-          duration:1,
-          ease:"power3.out",
+        return !element.closest(
+          ".hero"
+        );
 
-          scrollTrigger:{
-            trigger:element,
-            start:"top 85%",
-            once:true
+      }
+
+    )
+
+    .forEach(
+
+      function(element){
+
+
+        gsap.to(
+
+          element,
+
+          {
+
+            opacity:1,
+
+            y:0,
+
+            duration:1,
+
+            ease:"power3.out",
+
+            scrollTrigger:{
+
+              trigger:element,
+
+              start:"top 85%",
+
+              once:true
+
+            }
+
           }
 
-        }
-      );
+        );
 
-    });
+      }
+
+    );
+
 
 
   /* ==========================================================
-     STATEMENT
+     STATEMENT ANIMATION
   ========================================================== */
 
   const statement =
@@ -4046,50 +5231,89 @@ function trackMetaEvent(eventName){
 
   if(statement){
 
+
+    const originalHTML =
+      statement.innerHTML;
+
+
     const words =
-      statement.innerHTML
+      originalHTML
+
         .replace(
           /<br\s*\/?>/gi,
           " "
         )
+
         .split(/\s+/);
 
 
     statement.innerHTML =
-      words.map(function(word){
 
-        if(!word) return "";
+      words.map(
 
-        return `
-          <span
-            class="statement-word"
-            style="display:inline-block;opacity:.15;"
-          >
-            ${word}&nbsp;
-          </span>
-        `;
+        function(word){
 
-      }).join("");
+          if(!word){
+
+            return "";
+
+          }
+
+
+          return `
+
+            <span
+
+              class="statement-word"
+
+              style="
+                display:inline-block;
+                opacity:.15;
+              "
+
+            >
+
+              ${word}&nbsp;
+
+            </span>
+
+          `;
+
+        }
+
+      ).join("");
 
 
     gsap.to(
+
       ".statement-word",
+
       {
+
         opacity:1,
+
         stagger:.035,
+
         ease:"none",
 
         scrollTrigger:{
+
           trigger:".statement",
+
           start:"top 75%",
+
           end:"bottom 60%",
+
           scrub:.6
+
         }
 
       }
+
     );
 
   }
+
 
 
   /* ==========================================================
@@ -4104,21 +5328,31 @@ function trackMetaEvent(eventName){
 
     onUpdate:function(){
 
+
       const nav =
         document.querySelector(
           ".nav"
         );
 
 
-      if(!nav) return;
+      if(!nav){
+
+        return;
+
+      }
 
 
       nav.style.boxShadow =
+
         window.scrollY > 40
 
-        ? "0 10px 40px rgba(0,0,0,.55)"
+        ?
 
-        : "0 10px 40px rgba(0,0,0,.4)";
+        "0 10px 40px rgba(0,0,0,.55)"
+
+        :
+
+        "0 10px 40px rgba(0,0,0,.4)";
 
     }
 
@@ -4129,5 +5363,7 @@ function trackMetaEvent(eventName){
 
 </script>
 
+
 </body>
 </html>
+```

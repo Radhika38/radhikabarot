@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +30,6 @@ content="Digital marketing, video editing and technology by Radhika Barot.">
 
 <meta property="og:url"
 content="https://radhika38.github.io/radhikabarot/">
-
 
 
 <!-- ============================================================
@@ -84,8 +82,6 @@ s.parentNode.insertBefore(t,s)
 'https://connect.facebook.net/en_US/fbevents.js');
 
 
-/* YOUR EXISTING PIXEL */
-
 fbq('init', '1048726811492659');
 
 fbq('track', 'PageView');
@@ -107,7 +103,6 @@ src="https://www.facebook.com/tr?id=1048726811492659&ev=PageView&noscript=1"
 <!-- End Meta Pixel -->
 
 
-
 <!-- ============================================================
      FONTS
 ============================================================ -->
@@ -124,7 +119,6 @@ href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;60
 rel="stylesheet">
 
 
-
 <!-- ============================================================
      GSAP
 ============================================================ -->
@@ -138,7 +132,6 @@ src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
 </script>
 
 
-
 <style>
 
 /* ============================================================
@@ -148,29 +141,17 @@ src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
 :root{
 
   --bg:#070707;
-
   --bg2:#0c0c0c;
-
   --card:#141414;
-
   --card2:#181818;
-
   --white:#f5f5f5;
-
   --muted:#a1a1a1;
-
   --red:#ff2b2b;
-
   --red-dark:#c91515;
-
   --border:rgba(255,255,255,.10);
-
   --border-strong:rgba(255,255,255,.18);
-
   --display:'Space Grotesk',sans-serif;
-
   --body:'Inter',sans-serif;
-
   --ease:cubic-bezier(.16,.84,.44,1);
 
 }
@@ -183,9 +164,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js">
 *{
 
   margin:0;
-
   padding:0;
-
   box-sizing:border-box;
 
 }
@@ -199,15 +178,10 @@ html{
 body{
 
   background:var(--bg);
-
   color:var(--white);
-
   font-family:var(--body);
-
   line-height:1.5;
-
   overflow-x:hidden;
-
   -webkit-font-smoothing:antialiased;
 
 }
@@ -215,7 +189,6 @@ body{
 img{
 
   max-width:100%;
-
   display:block;
 
 }
@@ -223,7 +196,6 @@ img{
 a{
 
   color:inherit;
-
   text-decoration:none;
 
 }
@@ -231,13 +203,9 @@ a{
 button{
 
   font-family:inherit;
-
   cursor:pointer;
-
   border:0;
-
   background:none;
-
   color:inherit;
 
 }
@@ -245,7 +213,6 @@ button{
 ::selection{
 
   background:var(--red);
-
   color:white;
 
 }
@@ -253,7 +220,6 @@ button{
 :focus-visible{
 
   outline:2px solid var(--red);
-
   outline-offset:4px;
 
 }
@@ -266,11 +232,8 @@ button{
 .wrap{
 
   width:100%;
-
   max-width:1240px;
-
   margin:auto;
-
   padding:0 40px;
 
 }
@@ -278,9 +241,7 @@ button{
 .section{
 
   position:relative;
-
   padding:150px 0;
-
   border-top:1px solid var(--border);
 
 }
@@ -288,19 +249,12 @@ button{
 .label{
 
   display:inline-flex;
-
   align-items:center;
-
   gap:10px;
-
   color:var(--red);
-
   font-size:12px;
-
   font-weight:600;
-
   letter-spacing:2px;
-
   text-transform:uppercase;
 
 }
@@ -308,11 +262,8 @@ button{
 .label::before{
 
   content:"";
-
   width:22px;
-
   height:1px;
-
   background:var(--red);
 
 }
@@ -320,15 +271,10 @@ button{
 .heading-lg{
 
   margin-top:18px;
-
   font-family:var(--display);
-
   font-size:clamp(40px,6vw,72px);
-
   font-weight:600;
-
   line-height:1.05;
-
   letter-spacing:-.025em;
 
 }
@@ -336,9 +282,7 @@ button{
 .body-txt{
 
   color:var(--muted);
-
   font-size:17px;
-
   line-height:1.8;
 
 }
@@ -346,33 +290,19 @@ button{
 .btn{
 
   display:inline-flex;
-
   align-items:center;
-
   justify-content:center;
-
   gap:10px;
-
   padding:16px 28px;
-
   border-radius:100px;
-
   font-size:13px;
-
   font-weight:600;
-
   letter-spacing:1px;
-
   text-transform:uppercase;
-
   transition:
-
     transform .35s var(--ease),
-
     background .35s var(--ease),
-
     color .35s var(--ease),
-
     border-color .35s var(--ease);
 
 }
@@ -386,7 +316,6 @@ button{
 .btn-fill{
 
   background:var(--red);
-
   color:#090909;
 
 }
@@ -406,7 +335,6 @@ button{
 .btn-line:hover{
 
   color:var(--red);
-
   border-color:var(--red);
 
 }
@@ -431,13 +359,9 @@ button{
 .noise{
 
   position:fixed;
-
   inset:0;
-
   z-index:2;
-
   pointer-events:none;
-
   opacity:.035;
 
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
@@ -452,31 +376,19 @@ button{
 .cursor{
 
   position:fixed;
-
   left:0;
-
   top:0;
-
   width:10px;
-
   height:10px;
-
   border-radius:50%;
-
   background:var(--red);
-
   pointer-events:none;
-
   z-index:9999;
-
   transform:translate(-50%,-50%);
-
   mix-blend-mode:difference;
 
   transition:
-
     width .3s var(--ease),
-
     height .3s var(--ease);
 
 }
@@ -484,7 +396,6 @@ button{
 .cursor.hover{
 
   width:44px;
-
   height:44px;
 
 }
@@ -492,9 +403,7 @@ button{
 @media(max-width:1024px){
 
   .cursor{
-
     display:none;
-
   }
 
 }
@@ -507,21 +416,13 @@ button{
 .nav-outer{
 
   position:fixed;
-
   top:24px;
-
   left:0;
-
   right:0;
-
   z-index:1000;
-
   display:flex;
-
   justify-content:center;
-
   opacity:0;
-
   transform:translateY(-15px);
 
 }
@@ -529,21 +430,13 @@ button{
 .nav{
 
   display:flex;
-
   align-items:center;
-
   gap:8px;
-
   padding:8px 8px 8px 24px;
-
   background:rgba(11,11,11,.65);
-
   border:1px solid var(--border);
-
   border-radius:100px;
-
   backdrop-filter:blur(18px);
-
   box-shadow:0 10px 40px rgba(0,0,0,.4);
 
 }
@@ -551,13 +444,9 @@ button{
 .nav-logo{
 
   margin-right:24px;
-
   font-family:var(--display);
-
   font-size:16px;
-
   font-weight:600;
-
   letter-spacing:.5px;
 
 }
@@ -571,9 +460,7 @@ button{
 .nav-links{
 
   display:flex;
-
   gap:32px;
-
   margin-right:24px;
 
 }
@@ -581,13 +468,9 @@ button{
 .nav-links a{
 
   position:relative;
-
   padding:4px 0;
-
   color:var(--muted);
-
   font-size:13px;
-
   transition:color .3s ease;
 
 }
@@ -601,19 +484,12 @@ button{
 .nav-links a::after{
 
   content:"";
-
   position:absolute;
-
   left:0;
-
   bottom:-2px;
-
   width:0;
-
   height:1px;
-
   background:var(--red);
-
   transition:width .3s var(--ease);
 
 }
@@ -627,23 +503,14 @@ button{
 .nav-cta{
 
   display:flex;
-
   align-items:center;
-
   gap:6px;
-
   padding:12px 20px;
-
   background:var(--white);
-
   color:#080808;
-
   border-radius:100px;
-
   font-size:12px;
-
   font-weight:600;
-
   transition:.3s ease;
 
 }
@@ -657,15 +524,10 @@ button{
 .nav-burger{
 
   display:none;
-
   width:38px;
-
   height:38px;
-
   align-items:center;
-
   justify-content:center;
-
   border-radius:50%;
 
 }
@@ -673,11 +535,8 @@ button{
 .nav-burger span{
 
   position:relative;
-
   width:16px;
-
   height:1px;
-
   background:var(--white);
 
 }
@@ -686,15 +545,10 @@ button{
 .nav-burger span::after{
 
   content:"";
-
   position:absolute;
-
   left:0;
-
   width:16px;
-
   height:1px;
-
   background:var(--white);
 
 }
@@ -742,27 +596,16 @@ button{
 .mobile-menu{
 
   position:fixed;
-
   inset:0;
-
   z-index:999;
-
   display:flex;
-
   flex-direction:column;
-
   align-items:center;
-
   justify-content:center;
-
   gap:32px;
-
   background:rgba(7,7,7,.98);
-
   opacity:0;
-
   pointer-events:none;
-
   transition:opacity .4s ease;
 
 }
@@ -770,7 +613,6 @@ button{
 .mobile-menu.open{
 
   opacity:1;
-
   pointer-events:auto;
 
 }
@@ -778,9 +620,7 @@ button{
 .mobile-menu a{
 
   font-family:var(--display);
-
   font-size:32px;
-
   font-weight:600;
 
 }
@@ -793,15 +633,10 @@ button{
 .hero{
 
   position:relative;
-
   min-height:100vh;
-
   display:flex;
-
   align-items:center;
-
   padding:150px 0 100px;
-
   overflow:hidden;
 
 }
@@ -809,13 +644,9 @@ button{
 .hero-bg-glow{
 
   position:absolute;
-
   top:-20%;
-
   right:-10%;
-
   width:60vw;
-
   height:60vw;
 
   background:radial-gradient(
@@ -829,16 +660,13 @@ button{
 .hero-grid{
 
   position:absolute;
-
   inset:0;
 
   background-image:
-
     linear-gradient(
       rgba(255,255,255,.035) 1px,
       transparent 1px
     ),
-
     linear-gradient(
       90deg,
       rgba(255,255,255,.035) 1px,
@@ -858,15 +686,10 @@ button{
 .hero-grid-layout{
 
   position:relative;
-
   z-index:3;
-
   display:grid;
-
   grid-template-columns:1.15fr .85fr;
-
   gap:64px;
-
   align-items:center;
 
 }
@@ -874,15 +697,10 @@ button{
 .hero-heading{
 
   margin-top:22px;
-
   font-family:var(--display);
-
   font-size:clamp(48px,6.7vw,98px);
-
   font-weight:600;
-
   line-height:.98;
-
   letter-spacing:-.025em;
 
 }
@@ -890,7 +708,6 @@ button{
 .hero-heading .line{
 
   display:block;
-
   overflow:hidden;
 
 }
@@ -910,13 +727,9 @@ button{
 .hero-sub{
 
   max-width:52ch;
-
   margin-top:28px;
-
   color:var(--muted);
-
   font-size:18px;
-
   line-height:1.7;
 
 }
@@ -924,11 +737,8 @@ button{
 .hero-ctas{
 
   display:flex;
-
   flex-wrap:wrap;
-
   gap:16px;
-
   margin-top:40px;
 
 }
@@ -936,19 +746,12 @@ button{
 .hero-credibility{
 
   display:flex;
-
   align-items:center;
-
   gap:14px;
-
   margin-top:56px;
-
   color:var(--muted);
-
   font-size:12px;
-
   letter-spacing:1.5px;
-
   text-transform:uppercase;
 
 }
@@ -956,11 +759,8 @@ button{
 .hero-credibility .dot{
 
   width:6px;
-
   height:6px;
-
   border-radius:50%;
-
   background:var(--red);
 
 }
@@ -973,19 +773,14 @@ button{
 .hero-form-card{
 
   position:relative;
-
   padding:40px;
-
   background:linear-gradient(
     180deg,
     var(--card2),
     var(--card)
   );
-
   border:1px solid var(--border);
-
   border-radius:24px;
-
   box-shadow:0 30px 80px rgba(0,0,0,.5);
 
 }
@@ -993,15 +788,10 @@ button{
 .hero-form-card::before{
 
   content:"";
-
   position:absolute;
-
   top:0;
-
   left:32px;
-
   right:32px;
-
   height:1px;
 
   background:linear-gradient(
@@ -1016,7 +806,6 @@ button{
 .hero-form-card h3{
 
   font-family:var(--display);
-
   font-size:24px;
 
 }
@@ -1024,11 +813,8 @@ button{
 .form-sub{
 
   margin-top:10px;
-
   color:var(--muted);
-
   font-size:14px;
-
   line-height:1.6;
 
 }
@@ -1036,9 +822,7 @@ button{
 .form-grid{
 
   display:grid;
-
   gap:18px;
-
   margin-top:28px;
 
 }
@@ -1046,15 +830,10 @@ button{
 .field label{
 
   display:block;
-
   margin-bottom:8px;
-
   color:var(--muted);
-
   font-size:11px;
-
   letter-spacing:1.2px;
-
   text-transform:uppercase;
 
 }
@@ -1064,21 +843,13 @@ button{
 .field textarea{
 
   width:100%;
-
   padding:13px 16px;
-
   background:rgba(255,255,255,.02);
-
   color:var(--white);
-
   border:1px solid var(--border);
-
   border-radius:10px;
-
   font-family:inherit;
-
   font-size:14px;
-
   transition:.3s ease;
 
 }
@@ -1090,7 +861,6 @@ button{
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23A1A1A1' stroke-width='1.4' fill='none'/%3E%3C/svg%3E");
 
   background-repeat:no-repeat;
-
   background-position:right 16px center;
 
 }
@@ -1098,7 +868,6 @@ button{
 .field textarea{
 
   min-height:90px;
-
   resize:none;
 
 }
@@ -1108,9 +877,7 @@ button{
 .field textarea:focus{
 
   outline:none;
-
   border-color:var(--red);
-
   background:rgba(255,43,43,.04);
 
 }
@@ -1118,9 +885,7 @@ button{
 .field-row{
 
   display:grid;
-
   grid-template-columns:1fr 1fr;
-
   gap:14px;
 
 }
@@ -1128,15 +893,10 @@ button{
 .form-error{
 
   min-height:14px;
-
   margin-top:6px;
-
   color:var(--red);
-
   font-size:11px;
-
   opacity:0;
-
   transform:translateY(-3px);
 
 }
@@ -1144,7 +904,6 @@ button{
 .form-error.show{
 
   opacity:1;
-
   transform:translateY(0);
 
 }
@@ -1163,14 +922,19 @@ button{
 
 }
 
+.form-submit:disabled{
+
+  opacity:.65;
+  cursor:not-allowed;
+  transform:none;
+
+}
+
 .form-note{
 
   margin-top:16px;
-
   color:var(--muted);
-
   font-size:12px;
-
   text-align:center;
 
 }
@@ -1183,9 +947,7 @@ button{
 .about-layout{
 
   display:grid;
-
   grid-template-columns:.9fr 1.1fr;
-
   gap:80px;
 
 }
@@ -1193,11 +955,8 @@ button{
 .about-copy p{
 
   margin-top:20px;
-
   color:var(--muted);
-
   font-size:17px;
-
   line-height:1.85;
 
 }
@@ -1205,9 +964,7 @@ button{
 .about-copy p:first-child{
 
   margin-top:0;
-
   color:var(--white);
-
   font-size:19px;
 
 }
@@ -1215,13 +972,9 @@ button{
 .identity-strip{
 
   display:grid;
-
   grid-template-columns:1fr 1fr;
-
   margin-top:56px;
-
   border-top:1px solid var(--border);
-
   border-left:1px solid var(--border);
 
 }
@@ -1229,9 +982,7 @@ button{
 .identity-cell{
 
   padding:28px 26px;
-
   border-right:1px solid var(--border);
-
   border-bottom:1px solid var(--border);
 
 }
@@ -1239,9 +990,7 @@ button{
 .identity-cell .top{
 
   font-family:var(--display);
-
   font-size:19px;
-
   font-weight:600;
 
 }
@@ -1249,13 +998,9 @@ button{
 .identity-cell .bottom{
 
   margin-top:8px;
-
   color:var(--red);
-
   font-size:12px;
-
   letter-spacing:1px;
-
   text-transform:uppercase;
 
 }
@@ -1268,7 +1013,6 @@ button{
 .section-head{
 
   max-width:720px;
-
   margin-bottom:64px;
 
 }
@@ -1276,11 +1020,8 @@ button{
 .service-grid{
 
   display:grid;
-
   grid-template-columns:1fr 1fr;
-
   border-top:1px solid var(--border);
-
   border-left:1px solid var(--border);
 
 }
@@ -1288,15 +1029,10 @@ button{
 .service-card{
 
   position:relative;
-
   padding:48px 40px;
-
   overflow:hidden;
-
   border-right:1px solid var(--border);
-
   border-bottom:1px solid var(--border);
-
   transition:.4s ease;
 
 }
@@ -1310,9 +1046,7 @@ button{
 .service-card::before{
 
   content:"";
-
   position:absolute;
-
   inset:0;
 
   background:linear-gradient(
@@ -1322,7 +1056,6 @@ button{
   );
 
   opacity:0;
-
   transition:.4s ease;
 
 }
@@ -1336,9 +1069,7 @@ button{
 .service-num{
 
   color:var(--red);
-
   font-family:var(--display);
-
   font-size:13px;
 
 }
@@ -1346,11 +1077,8 @@ button{
 .service-card h3{
 
   position:relative;
-
   margin-top:20px;
-
   font-family:var(--display);
-
   font-size:26px;
 
 }
@@ -1358,15 +1086,10 @@ button{
 .service-card p{
 
   position:relative;
-
   max-width:42ch;
-
   margin-top:16px;
-
   color:var(--muted);
-
   font-size:15px;
-
   line-height:1.75;
 
 }
@@ -1374,23 +1097,14 @@ button{
 .service-arrow{
 
   position:relative;
-
   display:flex;
-
   align-items:center;
-
   justify-content:center;
-
   width:38px;
-
   height:38px;
-
   margin-top:28px;
-
   border:1px solid var(--border-strong);
-
   border-radius:50%;
-
   transition:.4s ease;
 
 }
@@ -1398,9 +1112,7 @@ button{
 .service-card:hover .service-arrow{
 
   background:var(--red);
-
   border-color:var(--red);
-
   transform:rotate(45deg);
 
 }
@@ -1413,9 +1125,7 @@ button{
 .skills-layout{
 
   display:grid;
-
   grid-template-columns:repeat(3,1fr);
-
   border-top:1px solid var(--border);
 
 }
@@ -1423,7 +1133,6 @@ button{
 .skill-col{
 
   padding:40px 36px;
-
   border-left:1px solid var(--border);
 
 }
@@ -1437,13 +1146,9 @@ button{
 .skill-col-title{
 
   color:var(--red);
-
   font-size:12px;
-
   font-weight:600;
-
   letter-spacing:1.5px;
-
   text-transform:uppercase;
 
 }
@@ -1451,11 +1156,8 @@ button{
 .chip-list{
 
   display:flex;
-
   flex-wrap:wrap;
-
   gap:10px;
-
   margin-top:26px;
 
 }
@@ -1463,13 +1165,9 @@ button{
 .chip{
 
   padding:9px 16px;
-
   border:1px solid var(--border);
-
   border-radius:100px;
-
   font-size:13px;
-
   transition:.3s ease;
 
 }
@@ -1477,9 +1175,7 @@ button{
 .chip:hover{
 
   color:var(--red);
-
   border-color:var(--red);
-
   transform:translateY(-2px);
 
 }
@@ -1492,9 +1188,7 @@ button{
 .work-grid{
 
   display:grid;
-
   grid-template-columns:1fr 1fr;
-
   gap:28px;
 
 }
@@ -1502,13 +1196,9 @@ button{
 .work-card{
 
   overflow:hidden;
-
   background:var(--card);
-
   border:1px solid var(--border);
-
   border-radius:18px;
-
   transition:.4s ease;
 
 }
@@ -1516,7 +1206,6 @@ button{
 .work-card:hover{
 
   transform:translateY(-6px);
-
   border-color:var(--border-strong);
 
 }
@@ -1524,17 +1213,14 @@ button{
 .work-visual{
 
   position:relative;
-
   aspect-ratio:16/10;
 
   background:
-
     radial-gradient(
       circle at 30% 20%,
       rgba(255,43,43,.16),
       transparent 55%
     ),
-
     linear-gradient(
       150deg,
       #191919,
@@ -1546,18 +1232,14 @@ button{
 .work-visual::after{
 
   content:"";
-
   position:absolute;
-
   inset:0;
 
   background-image:
-
     linear-gradient(
       rgba(255,255,255,.05) 1px,
       transparent 1px
     ),
-
     linear-gradient(
       90deg,
       rgba(255,255,255,.05) 1px,
@@ -1571,25 +1253,15 @@ button{
 .work-visual .tag{
 
   position:absolute;
-
   top:20px;
-
   left:20px;
-
   z-index:2;
-
   padding:8px 14px;
-
   background:rgba(0,0,0,.5);
-
   border:1px solid var(--border);
-
   border-radius:100px;
-
   font-size:11px;
-
   letter-spacing:1.5px;
-
   text-transform:uppercase;
 
 }
@@ -1597,13 +1269,9 @@ button{
 .work-body{
 
   display:flex;
-
   align-items:flex-end;
-
   justify-content:space-between;
-
   gap:20px;
-
   padding:28px 30px 32px;
 
 }
@@ -1611,7 +1279,6 @@ button{
 .work-body h3{
 
   font-family:var(--display);
-
   font-size:21px;
 
 }
@@ -1619,11 +1286,8 @@ button{
 .work-body p{
 
   margin-top:8px;
-
   color:var(--muted);
-
   font-size:14px;
-
   line-height:1.6;
 
 }
@@ -1631,21 +1295,13 @@ button{
 .work-arrow{
 
   display:flex;
-
   align-items:center;
-
   justify-content:center;
-
   flex-shrink:0;
-
   width:44px;
-
   height:44px;
-
   border:1px solid var(--border-strong);
-
   border-radius:50%;
-
   transition:.4s ease;
 
 }
@@ -1653,9 +1309,7 @@ button{
 .work-card:hover .work-arrow{
 
   background:var(--red);
-
   border-color:var(--red);
-
   transform:rotate(45deg);
 
 }
@@ -1674,15 +1328,10 @@ button{
 .process-row{
 
   display:grid;
-
   grid-template-columns:100px 1fr 1.4fr;
-
   gap:40px;
-
   align-items:center;
-
   padding:38px 0;
-
   border-bottom:1px solid var(--border);
 
 }
@@ -1690,7 +1339,6 @@ button{
 .process-num{
 
   color:var(--red);
-
   font-family:var(--display);
 
 }
@@ -1698,7 +1346,6 @@ button{
 .process-row h3{
 
   font-family:var(--display);
-
   font-size:26px;
 
 }
@@ -1706,11 +1353,8 @@ button{
 .process-row p{
 
   max-width:46ch;
-
   color:var(--muted);
-
   font-size:15px;
-
   line-height:1.7;
 
 }
@@ -1723,13 +1367,9 @@ button{
 .why-row{
 
   display:grid;
-
   grid-template-columns:1.3fr 1.7fr;
-
   gap:40px;
-
   padding:44px 0;
-
   border-top:1px solid var(--border);
 
 }
@@ -1743,7 +1383,6 @@ button{
 .why-row h3{
 
   font-family:var(--display);
-
   font-size:clamp(25px,3vw,34px);
 
 }
@@ -1751,11 +1390,8 @@ button{
 .why-row p{
 
   max-width:52ch;
-
   color:var(--muted);
-
   font-size:16px;
-
   line-height:1.75;
 
 }
@@ -1768,9 +1404,7 @@ button{
 .statement{
 
   padding:220px 0;
-
   text-align:center;
-
   border-top:1px solid var(--border);
 
 }
@@ -1778,11 +1412,8 @@ button{
 .statement h2{
 
   font-family:var(--display);
-
   font-size:clamp(38px,6vw,72px);
-
   line-height:1.14;
-
   letter-spacing:-.025em;
 
 }
@@ -1801,11 +1432,8 @@ button{
 .contact-layout{
 
   display:grid;
-
   grid-template-columns:1.2fr .8fr;
-
   gap:60px;
-
   align-items:end;
 
 }
@@ -1813,13 +1441,9 @@ button{
 .contact-copy p{
 
   max-width:50ch;
-
   margin-top:24px;
-
   color:var(--muted);
-
   font-size:17px;
-
   line-height:1.8;
 
 }
@@ -1833,7 +1457,6 @@ button{
 .contact-channels{
 
   display:flex;
-
   flex-direction:column;
 
 }
@@ -1841,15 +1464,10 @@ button{
 .channel-row{
 
   display:flex;
-
   align-items:center;
-
   justify-content:space-between;
-
   padding:22px 0;
-
   border-top:1px solid var(--border);
-
   transition:.3s ease;
 
 }
@@ -1875,11 +1493,8 @@ button{
 .channel-row .k{
 
   color:var(--muted);
-
   font-size:11px;
-
   letter-spacing:1.5px;
-
   text-transform:uppercase;
 
 }
@@ -1887,253 +1502,7 @@ button{
 .channel-row .v{
 
   font-family:var(--display);
-
   font-size:16px;
-
-}
-
-
-/* ============================================================
-   THANK YOU PAGE
-============================================================ */
-
-.thank-you-page{
-
-  position:fixed;
-
-  inset:0;
-
-  z-index:5000;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  padding:40px;
-
-  background:#070707;
-
-  opacity:0;
-
-  visibility:hidden;
-
-  pointer-events:none;
-
-  transition:
-
-    opacity .6s var(--ease),
-
-    visibility .6s var(--ease);
-
-  overflow:auto;
-
-}
-
-.thank-you-page.show{
-
-  opacity:1;
-
-  visibility:visible;
-
-  pointer-events:auto;
-
-}
-
-.thank-you-bg{
-
-  position:absolute;
-
-  inset:0;
-
-  pointer-events:none;
-
-  background:
-
-    radial-gradient(
-      circle at 50% 20%,
-      rgba(255,43,43,.15),
-      transparent 45%
-    );
-
-}
-
-.thank-you-grid{
-
-  position:absolute;
-
-  inset:0;
-
-  pointer-events:none;
-
-  opacity:.45;
-
-  background-image:
-
-    linear-gradient(
-      rgba(255,255,255,.035) 1px,
-      transparent 1px
-    ),
-
-    linear-gradient(
-      90deg,
-      rgba(255,255,255,.035) 1px,
-      transparent 1px
-    );
-
-  background-size:64px 64px;
-
-  mask-image:radial-gradient(
-    ellipse 70% 70% at 50% 50%,
-    black,
-    transparent 85%
-  );
-
-}
-
-.thank-you-content{
-
-  position:relative;
-
-  z-index:2;
-
-  width:100%;
-
-  max-width:800px;
-
-  text-align:center;
-
-  padding:70px 40px;
-
-  border:1px solid var(--border);
-
-  border-radius:28px;
-
-  background:
-
-    linear-gradient(
-      180deg,
-      rgba(24,24,24,.95),
-      rgba(14,14,14,.95)
-    );
-
-  box-shadow:
-
-    0 40px 120px rgba(0,0,0,.65);
-
-}
-
-.thank-you-line{
-
-  width:0;
-
-  height:2px;
-
-  margin:0 auto 30px;
-
-  background:var(--red);
-
-}
-
-.thank-you-label{
-
-  color:var(--red);
-
-  font-size:12px;
-
-  font-weight:600;
-
-  letter-spacing:3px;
-
-  text-transform:uppercase;
-
-}
-
-.thank-you-content h1{
-
-  margin-top:20px;
-
-  font-family:var(--display);
-
-  font-size:clamp(60px,10vw,120px);
-
-  line-height:.9;
-
-  letter-spacing:-.05em;
-
-}
-
-.thank-you-content h1 span{
-
-  color:var(--red);
-
-}
-
-.thank-you-content p{
-
-  max-width:580px;
-
-  margin:30px auto 0;
-
-  color:var(--muted);
-
-  font-size:17px;
-
-  line-height:1.8;
-
-}
-
-.thank-you-actions{
-
-  display:flex;
-
-  justify-content:center;
-
-  flex-wrap:wrap;
-
-  gap:14px;
-
-  margin-top:42px;
-
-}
-
-.thank-you-meta{
-
-  margin-top:35px;
-
-  color:#666;
-
-  font-size:11px;
-
-  letter-spacing:1.5px;
-
-  text-transform:uppercase;
-
-}
-
-
-/* ============================================================
-   COUNTDOWN
-============================================================ */
-
-.thank-you-countdown{
-
-  margin-top:24px;
-
-  color:#777;
-
-  font-size:12px;
-
-  letter-spacing:.5px;
-
-}
-
-.thank-you-countdown strong{
-
-  color:var(--red);
-
-  font-size:15px;
 
 }
 
@@ -2145,7 +1514,6 @@ button{
 footer{
 
   padding:60px 0 40px;
-
   border-top:1px solid var(--border);
 
 }
@@ -2153,13 +1521,9 @@ footer{
 .footer-top{
 
   display:flex;
-
   align-items:flex-end;
-
   justify-content:space-between;
-
   gap:24px;
-
   flex-wrap:wrap;
 
 }
@@ -2167,9 +1531,7 @@ footer{
 .footer-logo{
 
   font-family:var(--display);
-
   font-size:26px;
-
   font-weight:600;
 
 }
@@ -2183,9 +1545,7 @@ footer{
 .footer-role{
 
   margin-top:8px;
-
   color:var(--muted);
-
   font-size:13px;
 
 }
@@ -2193,7 +1553,6 @@ footer{
 .footer-social{
 
   display:flex;
-
   gap:28px;
 
 }
@@ -2201,9 +1560,7 @@ footer{
 .footer-social a{
 
   color:var(--muted);
-
   font-size:13px;
-
   transition:.3s ease;
 
 }
@@ -2217,21 +1574,13 @@ footer{
 .footer-bottom{
 
   display:flex;
-
   justify-content:space-between;
-
   gap:12px;
-
   flex-wrap:wrap;
-
   margin-top:48px;
-
   padding-top:24px;
-
   border-top:1px solid var(--border);
-
   color:var(--muted);
-
   font-size:12px;
 
 }
@@ -2244,7 +1593,6 @@ footer{
 .reveal{
 
   opacity:0;
-
   transform:translateY(28px);
 
 }
@@ -2257,23 +1605,16 @@ footer{
 @media(max-width:980px){
 
   .hero-grid-layout{
-
     grid-template-columns:1fr;
-
   }
 
   .about-layout{
-
     grid-template-columns:1fr;
-
     gap:50px;
-
   }
 
   .contact-layout{
-
     grid-template-columns:1fr;
-
   }
 
 }
@@ -2281,17 +1622,12 @@ footer{
 @media(max-width:860px){
 
   .work-grid{
-
     grid-template-columns:1fr;
-
   }
 
   .process-row{
-
     grid-template-columns:1fr;
-
     gap:10px;
-
   }
 
 }
@@ -2299,17 +1635,12 @@ footer{
 @media(max-width:820px){
 
   .skills-layout{
-
     grid-template-columns:1fr;
-
   }
 
   .skill-col{
-
     border-right:1px solid var(--border);
-
     border-bottom:1px solid var(--border);
-
   }
 
 }
@@ -2317,77 +1648,40 @@ footer{
 @media(max-width:760px){
 
   .wrap{
-
     padding:0 22px;
-
   }
 
   .section{
-
     padding:100px 0;
-
   }
 
   .statement{
-
     padding:130px 0;
-
   }
 
   .service-grid{
-
     grid-template-columns:1fr;
-
   }
 
   .identity-strip{
-
     grid-template-columns:1fr;
-
   }
 
   .field-row{
-
     grid-template-columns:1fr;
-
   }
 
   .why-row{
-
     grid-template-columns:1fr;
-
     gap:14px;
-
   }
 
   .hero{
-
     padding-top:130px;
-
   }
 
   .hero-form-card{
-
     padding:28px 22px;
-
-  }
-
-  .thank-you-page{
-
-    padding:20px;
-
-  }
-
-  .thank-you-content{
-
-    padding:55px 22px;
-
-  }
-
-  .thank-you-content p{
-
-    font-size:15px;
-
   }
 
 }
@@ -2395,15 +1689,11 @@ footer{
 @media(max-width:600px){
 
   .thank-you-actions{
-
     flex-direction:column;
-
   }
 
   .thank-you-actions .btn{
-
     width:100%;
-
   }
 
 }
@@ -2416,13 +1706,9 @@ footer{
 @media(prefers-reduced-motion:reduce){
 
   *{
-
     animation-duration:.01ms !important;
-
     transition-duration:.01ms !important;
-
     scroll-behavior:auto !important;
-
   }
 
 }
@@ -2448,24 +1734,18 @@ footer{
 
 <nav class="nav">
 
-
 <a href="#hero" class="nav-logo">
 RADHIKA<span>.</span>
 </a>
 
-
 <div class="nav-links">
 
 <a href="#about">About</a>
-
 <a href="#expertise">Expertise</a>
-
 <a href="#work">Work</a>
-
 <a href="#contact">Contact</a>
 
 </div>
-
 
 <a
 href="#contact"
@@ -2474,7 +1754,6 @@ id="navLetsTalk"
 >
 Let's Talk <span>↗</span>
 </a>
-
 
 <button
 class="nav-burger"
@@ -2517,7 +1796,6 @@ Let's Talk <span class="arrow">↗</span>
 </div>
 
 
-
 <!-- ============================================================
      HERO
 ============================================================ -->
@@ -2528,12 +1806,9 @@ Let's Talk <span class="arrow">↗</span>
 
 <div class="hero-grid"></div>
 
-
 <div class="wrap hero-grid-layout">
 
-
 <div class="hero-left">
-
 
 <div class="hero-eyebrow">
 
@@ -2548,21 +1823,17 @@ Hello, I'm Radhika 👋
 
 <h1 class="hero-heading">
 
-
 <span class="line">
 <span>I BUILD.</span>
 </span>
-
 
 <span class="line">
 <span>I MARKET.</span>
 </span>
 
-
 <span class="line">
 <span>I <span class="accent-word">CREATE.</span></span>
 </span>
-
 
 </h1>
 
@@ -2584,7 +1855,6 @@ that connect with people and create meaningful impact.
 class="hero-ctas reveal"
 id="heroCtas"
 >
-
 
 <a
 href="#work"
@@ -2611,7 +1881,6 @@ Let's Connect
 
 </a>
 
-
 </div>
 
 
@@ -2626,9 +1895,7 @@ Digital Marketing • Video Editing • Technology
 
 </div>
 
-
 </div>
-
 
 
 <!-- ============================================================
@@ -2640,14 +1907,11 @@ class="hero-right reveal"
 id="heroForm"
 >
 
-
 <div class="hero-form-card">
-
 
 <h3>
 Let's Work Together.
 </h3>
-
 
 <p class="form-sub">
 
@@ -2663,7 +1927,6 @@ id="leadForm"
 novalidate
 >
 
-
 <div
 class="field"
 data-field="name"
@@ -2673,7 +1936,6 @@ data-field="name"
 Name
 </label>
 
-
 <input
 type="text"
 id="f-name"
@@ -2682,7 +1944,6 @@ placeholder="Your full name"
 autocomplete="name"
 >
 
-
 <div class="form-error">
 Please enter your name.
 </div>
@@ -2690,9 +1951,7 @@ Please enter your name.
 </div>
 
 
-
 <div class="field-row">
-
 
 <div
 class="field"
@@ -2703,7 +1962,6 @@ data-field="email"
 Email
 </label>
 
-
 <input
 type="email"
 id="f-email"
@@ -2712,13 +1970,11 @@ placeholder="you@email.com"
 autocomplete="email"
 >
 
-
 <div class="form-error">
 Enter a valid email.
 </div>
 
 </div>
-
 
 
 <div
@@ -2730,7 +1986,6 @@ data-field="phone"
 Phone
 </label>
 
-
 <input
 type="tel"
 id="f-phone"
@@ -2738,7 +1993,6 @@ name="phone"
 placeholder="+91 00000 00000"
 autocomplete="tel"
 >
-
 
 <div class="form-error">
 Enter a valid phone number.
@@ -2749,7 +2003,6 @@ Enter a valid phone number.
 </div>
 
 
-
 <div
 class="field"
 data-field="help"
@@ -2758,7 +2011,6 @@ data-field="help"
 <label for="f-help">
 What do you need help with?
 </label>
-
 
 <select
 id="f-help"
@@ -2775,26 +2027,19 @@ Select an option
 </option>
 
 <option>Digital Marketing</option>
-
 <option>Meta Ads</option>
-
 <option>Social Media</option>
-
 <option>Video Editing</option>
-
 <option>Website</option>
-
 <option>Other</option>
 
 </select>
-
 
 <div class="form-error">
 Please choose an option.
 </div>
 
 </div>
-
 
 
 <div
@@ -2806,20 +2051,17 @@ data-field="message"
 Message
 </label>
 
-
 <textarea
 id="f-message"
 name="message"
 placeholder="Tell me about your project..."
 ></textarea>
 
-
 <div class="form-error">
 Please add a short message.
 </div>
 
 </div>
-
 
 
 <button
@@ -2841,7 +2083,6 @@ I'll get back to you as soon as possible.
 
 </p>
 
-
 </form>
 
 </div>
@@ -2851,7 +2092,6 @@ I'll get back to you as soon as possible.
 </div>
 
 </section>
-
 
 
 <!-- ============================================================
@@ -2865,16 +2105,13 @@ id="about"
 
 <div class="wrap">
 
-
 <div class="about-layout">
-
 
 <div>
 
 <span class="label reveal">
 About / 02
 </span>
-
 
 <h2 class="heading-lg reveal">
 More than one skill. One creative mind.
@@ -2885,25 +2122,21 @@ More than one skill. One creative mind.
 
 <div class="about-copy reveal">
 
-
 <p>
 I'm Radhika Barot, a BSc IT graduate with a passion
 for technology, digital marketing and visual creativity.
 </p>
-
 
 <p>
 My work sits at the intersection of code,
 marketing and content.
 </p>
 
-
 <p>
 I enjoy understanding how digital products work,
 how brands communicate online and how creative ideas
 can turn attention into meaningful action.
 </p>
-
 
 <p>
 From building digital experiences to planning
@@ -2912,15 +2145,12 @@ I bring a combination of technical thinking and creative
 execution to every project.
 </p>
 
-
 </div>
 
 </div>
-
 
 
 <div class="identity-strip reveal">
-
 
 <div class="identity-cell">
 
@@ -2973,13 +2203,11 @@ Problem Solving
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- ============================================================
@@ -2992,7 +2220,6 @@ id="expertise"
 >
 
 <div class="wrap">
-
 
 <div class="section-head">
 
@@ -3007,9 +2234,7 @@ What I bring to the table.
 </div>
 
 
-
 <div class="service-grid reveal">
-
 
 <div class="service-card">
 
@@ -3032,7 +2257,6 @@ and performance-focused marketing.
 </div>
 
 </div>
-
 
 
 <div class="service-card">
@@ -3058,7 +2282,6 @@ business objectives.
 </div>
 
 
-
 <div class="service-card">
 
 <div class="service-num">
@@ -3080,7 +2303,6 @@ a brand's visual identity.
 </div>
 
 </div>
-
 
 
 <div class="service-card">
@@ -3105,13 +2327,11 @@ experiences.
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- ============================================================
@@ -3124,7 +2344,6 @@ id="skills"
 >
 
 <div class="wrap">
-
 
 <div class="section-head">
 
@@ -3141,30 +2360,23 @@ Technical thinking. Creative execution.
 
 <div class="skills-layout reveal">
 
-
 <div class="skill-col">
 
 <div class="skill-col-title">
 Digital Marketing
 </div>
 
-
 <div class="chip-list">
 
 <span class="chip">Meta Ads</span>
-
 <span class="chip">Lead Generation</span>
-
 <span class="chip">Social Media Marketing</span>
-
 <span class="chip">Google Business Profile</span>
-
 <span class="chip">Digital Strategy</span>
 
 </div>
 
 </div>
-
 
 
 <div class="skill-col">
@@ -3173,21 +2385,16 @@ Digital Marketing
 Creative
 </div>
 
-
 <div class="chip-list">
 
 <span class="chip">Video Editing</span>
-
 <span class="chip">Reels</span>
-
 <span class="chip">Social Media Content</span>
-
 <span class="chip">Creative Direction</span>
 
 </div>
 
 </div>
-
 
 
 <div class="skill-col">
@@ -3196,40 +2403,28 @@ Creative
 Technology
 </div>
 
-
 <div class="chip-list">
 
 <span class="chip">Java</span>
-
 <span class="chip">Python</span>
-
 <span class="chip">HTML</span>
-
 <span class="chip">CSS</span>
-
 <span class="chip">JavaScript</span>
-
 <span class="chip">PHP</span>
-
 <span class="chip">Laravel</span>
-
 <span class="chip">Django</span>
-
 <span class="chip">MySQL</span>
-
 <span class="chip">Git</span>
 
 </div>
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- ============================================================
@@ -3242,7 +2437,6 @@ id="work"
 >
 
 <div class="wrap">
-
 
 <div class="section-head">
 
@@ -3259,7 +2453,6 @@ Ideas into digital experiences.
 
 <div class="work-grid reveal">
 
-
 <div class="work-card">
 
 <div class="work-visual">
@@ -3269,7 +2462,6 @@ Digital Marketing
 </span>
 
 </div>
-
 
 <div class="work-body">
 
@@ -3286,7 +2478,6 @@ and online growth.
 
 </div>
 
-
 <div class="work-arrow">
 ↗
 </div>
@@ -3294,7 +2485,6 @@ and online growth.
 </div>
 
 </div>
-
 
 
 <div class="work-card">
@@ -3306,7 +2496,6 @@ Meta Ads
 </span>
 
 </div>
-
 
 <div class="work-body">
 
@@ -3323,7 +2512,6 @@ around clear objectives.
 
 </div>
 
-
 <div class="work-arrow">
 ↗
 </div>
@@ -3331,7 +2519,6 @@ around clear objectives.
 </div>
 
 </div>
-
 
 
 <div class="work-card">
@@ -3343,7 +2530,6 @@ Video Editing
 </span>
 
 </div>
-
 
 <div class="work-body">
 
@@ -3360,7 +2546,6 @@ and communicate clearly.
 
 </div>
 
-
 <div class="work-arrow">
 ↗
 </div>
@@ -3368,7 +2553,6 @@ and communicate clearly.
 </div>
 
 </div>
-
 
 
 <div class="work-card">
@@ -3380,7 +2564,6 @@ Web / Technology
 </span>
 
 </div>
-
 
 <div class="work-body">
 
@@ -3397,7 +2580,6 @@ and clean execution.
 
 </div>
 
-
 <div class="work-arrow">
 ↗
 </div>
@@ -3406,13 +2588,11 @@ and clean execution.
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- ============================================================
@@ -3425,7 +2605,6 @@ id="process"
 >
 
 <div class="wrap">
-
 
 <div class="section-head">
 
@@ -3441,7 +2620,6 @@ From idea to execution.
 
 
 <div class="process-list reveal">
-
 
 <div class="process-row">
 
@@ -3512,13 +2690,11 @@ keep moving forward.
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- ============================================================
@@ -3531,7 +2707,6 @@ id="why"
 >
 
 <div class="wrap">
-
 
 <div class="section-head">
 
@@ -3547,7 +2722,6 @@ One person. Multiple perspectives.
 
 
 <div class="why-list reveal">
-
 
 <div class="why-row">
 
@@ -3603,13 +2777,11 @@ and digital strategies.
 
 </div>
 
-
 </div>
 
 </div>
 
 </section>
-
 
 
 <!-- ============================================================
@@ -3639,7 +2811,6 @@ mean something.
 </section>
 
 
-
 <!-- ============================================================
      CONTACT
 ============================================================ -->
@@ -3651,9 +2822,7 @@ id="contact"
 
 <div class="wrap">
 
-
 <div class="contact-layout">
-
 
 <div class="contact-copy reveal">
 
@@ -3661,18 +2830,15 @@ id="contact"
 Contact / 08
 </span>
 
-
 <h2 class="heading-lg">
 Have an idea? Let's build it.
 </h2>
-
 
 <p>
 Whether you're looking for digital marketing support,
 creative content, video editing or a digital project,
 let's start with a conversation.
 </p>
-
 
 <a
 href="#hero"
@@ -3689,9 +2855,7 @@ Let's Talk
 </div>
 
 
-
 <div class="contact-channels reveal">
-
 
 <div class="channel-row">
 
@@ -3744,7 +2908,6 @@ WhatsApp
 
 </div>
 
-
 </div>
 
 </div>
@@ -3752,7 +2915,6 @@ WhatsApp
 </div>
 
 </section>
-
 
 
 <!-- ============================================================
@@ -3763,9 +2925,7 @@ WhatsApp
 
 <div class="wrap">
 
-
 <div class="footer-top">
-
 
 <div>
 
@@ -3796,7 +2956,6 @@ Email
 
 </div>
 
-
 </div>
 
 
@@ -3812,121 +2971,9 @@ Built with intent.
 
 </div>
 
-
 </div>
 
 </footer>
-
-
-
-<!-- ============================================================
-     THANK YOU PAGE
-============================================================ -->
-
-<div
-class="thank-you-page"
-id="thankYouPage"
-aria-hidden="true"
->
-
-
-<div class="thank-you-bg"></div>
-
-<div class="thank-you-grid"></div>
-
-
-<div class="thank-you-content">
-
-
-<div class="thank-you-line"></div>
-
-
-<div class="thank-you-label">
-Inquiry Received / 09
-</div>
-
-
-<h1>
-THANK <span>YOU.</span>
-</h1>
-
-
-<p>
-
-Thank you for reaching out.
-
-Your inquiry has been received successfully.
-
-I appreciate your interest and will get back to you
-as soon as possible.
-
-</p>
-
-
-<div class="thank-you-actions">
-
-
-<a
-href="#hero"
-class="btn btn-fill"
-id="thankHomeBtn"
->
-
-Back to Home
-
-<span class="arrow">↗</span>
-
-</a>
-
-
-<a
-href="#work"
-class="btn btn-line"
-id="thankWorkBtn"
->
-
-View My Work
-
-<span class="arrow">↗</span>
-
-</a>
-
-
-</div>
-
-
-<!-- COUNTDOWN -->
-
-<div class="thank-you-countdown">
-
-Returning to homepage in
-
-<strong id="thankCountdown">
-10
-</strong>
-
-seconds
-
-</div>
-
-
-<div class="thank-you-meta">
-
-Radhika Barot
-•
-Digital Marketing
-•
-Creative
-•
-Technology
-
-</div>
-
-
-</div>
-
-</div>
-
 
 
 <!-- ============================================================
@@ -3958,7 +3005,6 @@ function trackMetaEvent(eventName){
   }
 
 }
-
 
 
 /* ============================================================
@@ -4016,11 +3062,8 @@ function trackMetaEvent(eventName){
   [
 
     letsConnect,
-
     navLetsTalk,
-
     mobileLetsTalk,
-
     contactLetsTalk
 
   ].forEach(function(button){
@@ -4045,29 +3088,15 @@ function trackMetaEvent(eventName){
 })();
 
 
-
 /* ============================================================
-   FORM + THANK YOU
+   FORM VALIDATION + REDIRECT
 ============================================================ */
 
 (function(){
 
-
   const form =
     document.getElementById(
       "leadForm"
-    );
-
-
-  const thankYou =
-    document.getElementById(
-      "thankYouPage"
-    );
-
-
-  const countdown =
-    document.getElementById(
-      "thankCountdown"
     );
 
 
@@ -4077,15 +3106,11 @@ function trackMetaEvent(eventName){
     );
 
 
-  if(
-    !form ||
-    !thankYou
-  ){
+  if(!form){
 
     return;
 
   }
-
 
 
   /* ==========================================================
@@ -4101,7 +3126,6 @@ function trackMetaEvent(eventName){
   }
 
 
-
   /* ==========================================================
      PHONE VALIDATION
   ========================================================== */
@@ -4113,277 +3137,6 @@ function trackMetaEvent(eventName){
     );
 
   }
-
-
-
-  /* ==========================================================
-     SHOW THANK YOU
-  ========================================================== */
-
-  function showThankYou(){
-
-
-    /* ----------------------------------------------
-       Prevent duplicate Lead event
-    ---------------------------------------------- */
-
-    if(
-      sessionStorage.getItem(
-        "radhikaLeadTracked"
-      ) !== "1"
-    ){
-
-      trackMetaEvent(
-        "Lead"
-      );
-
-
-      sessionStorage.setItem(
-        "radhikaLeadTracked",
-        "1"
-      );
-
-    }
-
-
-
-    /* ----------------------------------------------
-       Show Thank You
-    ---------------------------------------------- */
-
-    thankYou.classList.add(
-      "show"
-    );
-
-
-    thankYou.setAttribute(
-      "aria-hidden",
-      "false"
-    );
-
-
-    document.body.style.overflow =
-      "hidden";
-
-
-
-    /* ----------------------------------------------
-       Reset form
-    ---------------------------------------------- */
-
-    form.reset();
-
-
-    /* ----------------------------------------------
-       Reset submit button
-    ---------------------------------------------- */
-
-    if(submitButton){
-
-      submitButton.disabled =
-        false;
-
-      submitButton.innerHTML =
-        'Send Inquiry <span class="arrow">↗</span>';
-
-    }
-
-
-
-    /* ----------------------------------------------
-       GSAP animation
-    ---------------------------------------------- */
-
-    if(
-      typeof gsap !== "undefined"
-    ){
-
-      gsap.fromTo(
-
-        ".thank-you-content",
-
-        {
-
-          opacity:0,
-
-          y:40,
-
-          scale:.97
-
-        },
-
-        {
-
-          opacity:1,
-
-          y:0,
-
-          scale:1,
-
-          duration:.8,
-
-          ease:"power3.out"
-
-        }
-
-      );
-
-
-      gsap.fromTo(
-
-        ".thank-you-line",
-
-        {
-
-          width:0
-
-        },
-
-        {
-
-          width:80,
-
-          duration:.7,
-
-          delay:.2,
-
-          ease:"power3.out"
-
-        }
-
-      );
-
-    }
-
-
-
-    /* ----------------------------------------------
-       COUNTDOWN
-    ---------------------------------------------- */
-
-    let seconds = 10;
-
-
-    countdown.textContent =
-      seconds;
-
-
-    clearInterval(
-      window.radhikaCountdownTimer
-    );
-
-
-    window.radhikaCountdownTimer =
-      setInterval(
-
-        function(){
-
-
-          seconds--;
-
-
-          countdown.textContent =
-            seconds;
-
-
-          if(seconds <= 0){
-
-            clearInterval(
-              window.radhikaCountdownTimer
-            );
-
-
-            closeThankYou(
-              "hero"
-            );
-
-          }
-
-
-        },
-
-        1000
-
-      );
-
-  }
-
-
-
-  /* ==========================================================
-     CLOSE THANK YOU
-  ========================================================== */
-
-  function closeThankYou(
-    destination
-  ){
-
-
-    clearInterval(
-      window.radhikaCountdownTimer
-    );
-
-
-    thankYou.classList.remove(
-      "show"
-    );
-
-
-    thankYou.setAttribute(
-      "aria-hidden",
-      "true"
-    );
-
-
-    document.body.style.overflow =
-      "";
-
-
-    /* ----------------------------------------------
-       Reset Lead tracker.
-
-       This allows another real form submission
-       later in the same browser session.
-    ---------------------------------------------- */
-
-    sessionStorage.removeItem(
-      "radhikaLeadTracked"
-    );
-
-
-    setTimeout(
-
-      function(){
-
-        const target =
-          document.getElementById(
-            destination
-          );
-
-
-        if(target){
-
-          target.scrollIntoView({
-            behavior:"smooth"
-          });
-
-        }else{
-
-          window.scrollTo({
-            top:0,
-            behavior:"smooth"
-          });
-
-        }
-
-      },
-
-      50
-
-    );
-
-  }
-
 
 
   /* ==========================================================
@@ -4402,16 +3155,9 @@ function trackMetaEvent(eventName){
       let valid = true;
 
 
-
-      /* ----------------------------------------------
-         VALIDATION RULES
-      ---------------------------------------------- */
-
       const checks = [
 
-
         {
-
           name:"name",
 
           test:function(value){
@@ -4422,9 +3168,7 @@ function trackMetaEvent(eventName){
 
         },
 
-
         {
-
           name:"email",
 
           test:function(value){
@@ -4437,9 +3181,7 @@ function trackMetaEvent(eventName){
 
         },
 
-
         {
-
           name:"phone",
 
           test:function(value){
@@ -4452,9 +3194,7 @@ function trackMetaEvent(eventName){
 
         },
 
-
         {
-
           name:"help",
 
           test:function(value){
@@ -4465,9 +3205,7 @@ function trackMetaEvent(eventName){
 
         },
 
-
         {
-
           name:"message",
 
           test:function(value){
@@ -4481,14 +3219,8 @@ function trackMetaEvent(eventName){
       ];
 
 
-
-      /* ----------------------------------------------
-         RUN VALIDATION
-      ---------------------------------------------- */
-
       checks.forEach(
         function(check){
-
 
           const field =
             form.querySelector(
@@ -4520,24 +3252,19 @@ function trackMetaEvent(eventName){
 
             valid = false;
 
-
             field.classList.add(
               "invalid"
             );
-
 
             error.classList.add(
               "show"
             );
 
-
           }else{
-
 
             field.classList.remove(
               "invalid"
             );
-
 
             error.classList.remove(
               "show"
@@ -4549,11 +3276,6 @@ function trackMetaEvent(eventName){
       );
 
 
-
-      /* ----------------------------------------------
-         STOP IF INVALID
-      ---------------------------------------------- */
-
       if(!valid){
 
         return;
@@ -4561,14 +3283,7 @@ function trackMetaEvent(eventName){
       }
 
 
-
-      /* ----------------------------------------------
-         PREVENT DOUBLE CLICK
-      ---------------------------------------------- */
-
-      if(
-        submitButton.disabled
-      ){
+      if(submitButton.disabled){
 
         return;
 
@@ -4583,39 +3298,52 @@ function trackMetaEvent(eventName){
         "Sending...";
 
 
+      /*
+       * IMPORTANT:
+       * This current version has no backend/API.
+       *
+       * Therefore, after successful frontend
+       * validation, Lead is tracked and the
+       * visitor is redirected to thank-you.html.
+       *
+       * Connect a real form backend before
+       * treating this as a confirmed database/email lead.
+       */
 
-      /* ==================================================
-         IMPORTANT
 
-         YOUR CURRENT HTML DOES NOT HAVE A REAL
-         EMAIL/API FORM BACKEND.
+      if(
+        typeof window.fbq === "function"
+      ){
 
-         Therefore the line below treats a valid
-         browser submission as successful.
+        window.fbq(
+          "track",
+          "Lead"
+        );
 
-         If you have Formspree, EmailJS, Web3Forms,
-         PHP, Firebase or another API, put that
-         request here and call showThankYou() ONLY
-         after the request succeeds.
-      ================================================== */
+      }
 
+
+      /*
+       * Small delay so Meta Pixel has time
+       * to register the Lead event.
+       */
 
       setTimeout(
 
         function(){
 
-          showThankYou();
+          window.location.href =
+            "thank-you.html";
 
         },
 
-        500
+        700
 
       );
 
     }
 
   );
-
 
 
   /* ==========================================================
@@ -4628,13 +3356,11 @@ function trackMetaEvent(eventName){
 
     function(input){
 
-
       input.addEventListener(
 
         "input",
 
         function(){
-
 
           const field =
             input.closest(
@@ -4676,73 +3402,7 @@ function trackMetaEvent(eventName){
 
   );
 
-
-
-  /* ==========================================================
-     HOME BUTTON
-  ========================================================== */
-
-  const homeButton =
-    document.getElementById(
-      "thankHomeBtn"
-    );
-
-
-  if(homeButton){
-
-    homeButton.addEventListener(
-
-      "click",
-
-      function(event){
-
-        event.preventDefault();
-
-        closeThankYou(
-          "hero"
-        );
-
-      }
-
-    );
-
-  }
-
-
-
-  /* ==========================================================
-     WORK BUTTON
-  ========================================================== */
-
-  const workButton =
-    document.getElementById(
-      "thankWorkBtn"
-    );
-
-
-  if(workButton){
-
-    workButton.addEventListener(
-
-      "click",
-
-      function(event){
-
-        event.preventDefault();
-
-        closeThankYou(
-          "work"
-        );
-
-      }
-
-    );
-
-  }
-
-
 })();
-
 
 
 /* ============================================================
@@ -4750,7 +3410,6 @@ function trackMetaEvent(eventName){
 ============================================================ */
 
 (function(){
-
 
   const cursor =
     document.getElementById(
@@ -4774,11 +3433,8 @@ function trackMetaEvent(eventName){
 
 
   let mouseX = 0;
-
   let mouseY = 0;
-
   let currentX = 0;
-
   let currentY = 0;
 
 
@@ -4835,7 +3491,6 @@ function trackMetaEvent(eventName){
 
     function(element){
 
-
       element.addEventListener(
 
         "mouseenter",
@@ -4872,13 +3527,11 @@ function trackMetaEvent(eventName){
 })();
 
 
-
 /* ============================================================
    MOBILE MENU
 ============================================================ */
 
 (function(){
-
 
   const burger =
     document.getElementById(
@@ -4908,7 +3561,6 @@ function trackMetaEvent(eventName){
 
     function(){
 
-
       const isOpen =
         menu.classList.toggle(
           "open"
@@ -4931,13 +3583,11 @@ function trackMetaEvent(eventName){
 
     function(link){
 
-
       link.addEventListener(
 
         "click",
 
         function(){
-
 
           menu.classList.remove(
             "open"
@@ -4960,13 +3610,11 @@ function trackMetaEvent(eventName){
 })();
 
 
-
 /* ============================================================
    GSAP
 ============================================================ */
 
 (function(){
-
 
   if(
     typeof gsap === "undefined"
@@ -4990,7 +3638,6 @@ function trackMetaEvent(eventName){
 
   if(reduced){
 
-
     document.querySelectorAll(
       ".reveal"
     ).forEach(
@@ -5007,11 +3654,9 @@ function trackMetaEvent(eventName){
 
     );
 
-
     return;
 
   }
-
 
 
   /* ==========================================================
@@ -5035,9 +3680,7 @@ function trackMetaEvent(eventName){
     {
 
       opacity:1,
-
       y:0,
-
       duration:.8
 
     },
@@ -5054,9 +3697,7 @@ function trackMetaEvent(eventName){
     {
 
       yPercent:120,
-
       duration:1,
-
       stagger:.12
 
     },
@@ -5073,7 +3714,6 @@ function trackMetaEvent(eventName){
     {
 
       opacity:1,
-
       duration:.6
 
     },
@@ -5090,9 +3730,7 @@ function trackMetaEvent(eventName){
     {
 
       opacity:1,
-
       y:0,
-
       duration:.8
 
     },
@@ -5109,9 +3747,7 @@ function trackMetaEvent(eventName){
     {
 
       opacity:1,
-
       y:0,
-
       duration:.8
 
     },
@@ -5128,9 +3764,7 @@ function trackMetaEvent(eventName){
     {
 
       opacity:1,
-
       y:0,
-
       duration:.8
 
     },
@@ -5147,9 +3781,7 @@ function trackMetaEvent(eventName){
     {
 
       opacity:1,
-
       y:0,
-
       duration:1
 
     },
@@ -5159,15 +3791,12 @@ function trackMetaEvent(eventName){
   );
 
 
-
   /* ==========================================================
      SCROLL REVEALS
   ========================================================== */
 
   gsap.utils
-
     .toArray(".reveal")
-
     .filter(
 
       function(element){
@@ -5179,11 +3808,9 @@ function trackMetaEvent(eventName){
       }
 
     )
-
     .forEach(
 
       function(element){
-
 
         gsap.to(
 
@@ -5192,19 +3819,14 @@ function trackMetaEvent(eventName){
           {
 
             opacity:1,
-
             y:0,
-
             duration:1,
-
             ease:"power3.out",
 
             scrollTrigger:{
 
               trigger:element,
-
               start:"top 85%",
-
               once:true
 
             }
@@ -5216,7 +3838,6 @@ function trackMetaEvent(eventName){
       }
 
     );
-
 
 
   /* ==========================================================
@@ -5231,19 +3852,16 @@ function trackMetaEvent(eventName){
 
   if(statement){
 
-
     const originalHTML =
       statement.innerHTML;
 
 
     const words =
       originalHTML
-
         .replace(
           /<br\s*\/?>/gi,
           " "
         )
-
         .split(/\s+/);
 
 
@@ -5291,19 +3909,14 @@ function trackMetaEvent(eventName){
       {
 
         opacity:1,
-
         stagger:.035,
-
         ease:"none",
 
         scrollTrigger:{
 
           trigger:".statement",
-
           start:"top 75%",
-
           end:"bottom 60%",
-
           scrub:.6
 
         }
@@ -5315,7 +3928,6 @@ function trackMetaEvent(eventName){
   }
 
 
-
   /* ==========================================================
      NAV SCROLL
   ========================================================== */
@@ -5323,11 +3935,9 @@ function trackMetaEvent(eventName){
   ScrollTrigger.create({
 
     start:80,
-
     end:999999,
 
     onUpdate:function(){
-
 
       const nav =
         document.querySelector(
@@ -5366,4 +3976,3 @@ function trackMetaEvent(eventName){
 
 </body>
 </html>
-```
